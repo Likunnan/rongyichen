@@ -108,6 +108,13 @@ const AcademicProfile = () => {
         authors: "Rui Zhang, Rongyi Chen",
         conference: "2025 International Association for Media and Communication Research (IAMCR) Annual Conference.",
         location: "Singapore"
+      },
+      {
+        year: "2024",
+        title: "“Have you seen the lovers in the game? Are they like us?” Online Games and Game-Mediated Romantic Relationships",
+        authors: "Jingrong Xu, Rongyi Chen and Haoran Dai",
+        conference: "2024 National Communication Association (NCA) 110th Annual Convention",
+        location: "New Orleans, USA"
       }
     ]
   };
