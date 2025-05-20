@@ -90,6 +90,14 @@ const AcademicProfile = () => {
     conferences: [
       {
         year: "2025",
+        title: "When Memes Become Mean: Discrimination Recognition and Group Norms in Adolescent Bullying",
+        authors: "Rongyi Chen, Qing Xiao, Shike Lin, Menghan Yin, Jingjia Xiao, Hua Zhong, Bingbing Zhang",
+        conference: "2025 Association for Education in Journalism and Mass Communication (AEJMC) 108th Annual Conference",
+        location: "San Francisco, USA",
+        award: "🏆 Second Place Faculty Paper Award, Mass Communication and Society Division" // 添加奖项信息
+      },
+      {
+        year: "2025",
         title: "Responsible LLMs in Persuasive Health Message: Comparing Language Biases in General LLMs and Healthcare LLMs",
         authors: "Rongyi Chen, Honghua Pan, Ni Yuan, Yalong Xiao, Jie Feng",
         conference: " 2025 the 75th Annual Conference of the International Communication Association (ICA)",
@@ -106,7 +114,7 @@ const AcademicProfile = () => {
         year: "2025",
         title: "How AI Constructs Disaster Narratives: A Comparative Analysis of LLMs in Multimodal Disaster News Production",
         authors: "Rui Zhang, Rongyi Chen",
-        conference: "2025 International Association for Media and Communication Research (IAMCR) Annual Conference.",
+        conference: "2025 International Association for Media and Communication Research (IAMCR) Annual Conference",
         location: "Singapore"
       },
       {
@@ -229,7 +237,7 @@ const AcademicProfile = () => {
                 <User size={48} className="text-blue-500" />
               ) : (
                 <img 
-                  src="/rongyichen/public/images/IMG_1783.jpg" 
+                  src="/rongyichen/images/IMG_1783.jpg" 
                   alt={profileData.name} 
                   className="w-full h-full object-cover"
                   onError={handleImageError}
@@ -612,8 +620,14 @@ const AcademicProfile = () => {
                     <ul className="space-y-6">
                       {researchData.conferences.map((conf, index) => (
                         <li key={index} className="border-b border-gray-100 pb-5 last:border-b-0 last:pb-0">
+                          {conf.award && (
+                            <div className="mb-2 flex items-center">
+                              <span className="text-yellow-600 mr-1">🏆</span>
+                              <span className="text-sm font-bold text-yellow-600">{conf.award}</span>
+                            </div>
+                          )}
                           <div className="flex flex-wrap justify-between items-start mb-2">
-                            <h4 className="text-lg font-semibold text-gray-800 mb-1">{conf.title}</h4>
+                            <h4 className="text-lg font-semibold text-gray-800 mb-1 flex-1 mr-2">{conf.title}</h4>
                             <span className="text-sm bg-blue-50 text-blue-600 px-3 py-1 rounded-full">{conf.year}</span>
                           </div>
                           <p className="text-sm text-gray-600 mb-2">{conf.authors}</p>
