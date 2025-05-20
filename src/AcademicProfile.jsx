@@ -118,11 +118,25 @@ const AcademicProfile = () => {
         location: "Singapore"
       },
       {
+        year: "2025",
+        title: "An Emerging Platform Entertainment Model in China:Algorithms Regulation and the Composite Interaction ofLive Streaming and Short Videos",
+        authors: "Rongyi Chen, Chuyi Guo",
+        conference: "Preconference of the 75th Annual Conference of the International Communication Association (ICA) 2025: Debating Creator Culture",
+        location: "Singapore"
+      },
+      {
         year: "2024",
         title: "“Have you seen the lovers in the game? Are they like us?” Online Games and Game-Mediated Romantic Relationships",
-        authors: "Jingrong Xu, Rongyi Chen and Haoran Dai",
+        authors: "Jingrong Xu, Rongyi Chen, Haoran Dai",
         conference: "2024 National Communication Association (NCA) 110th Annual Convention",
         location: "New Orleans, USA"
+      },
+      {
+        year: "2024",
+        title: "Gresham's Law in Language Education: How Short Video buzzwords Reshapes Adolescents' Expression Habits and Semantic Understanding Capabilities",
+        authors: "Rongyi Chen, Shike Lin, Haoran Dai",
+        conference: "2024 International Association for Media and Communication Research (IAMCR) Annual Conference",
+        location: "Christchurch, New Zealand"
       },
       {
         year: "2024",
@@ -130,6 +144,27 @@ const AcademicProfile = () => {
         authors: "Rongyi Chen, Qing Xiao, Haoran Dai",
         conference: "2024 the 10th ECREA European Communication Conference (ECC)",
         location: "Ljubljana, Slovenia"
+      },
+      {
+        year: "2024",
+        title: "Urban voice: LLM-based public opinion visualization for human-centered urban planning",
+        authors: "Rongyi Chen, Jingjia Xiao, Zilu Wang, Qing Xiao",
+        conference: "2024 International Conference of Social Computing (ICSC 2024)",
+        location: "Guangzhou, China"
+      },
+      {
+        year: "2023",
+        title: "Focus on Supporting Roles in TikTok's Live-streaming E-commerce: How Do Assistant Anchors Affect Audiences' Purchase Intention?",
+        authors: "Rongyi Chen, Shike Lin, Huiying Zhang",
+        conference: "2023 TikTok Creators and Digital Economies Symposium",
+        location: "London, UK"
+      },
+      {
+        year: "2023",
+        title: "Distorted emotional labor: an ethnography of a commercial live-streaming assistant anchor group",
+        authors: "Rongyi Chen, Shike Lin",
+        conference: "2023 International Association for Media and Communication Research (IAMCR) Annual Conference",
+        location: "Lyon, France"
       }
     ]
   };
