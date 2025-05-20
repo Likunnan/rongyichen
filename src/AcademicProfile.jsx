@@ -123,6 +123,13 @@ const AcademicProfile = () => {
         authors: "Jingrong Xu, Rongyi Chen and Haoran Dai",
         conference: "2024 National Communication Association (NCA) 110th Annual Convention",
         location: "New Orleans, USA"
+      },
+      {
+        year: "2024",
+        title: "The illusion of pluralistic andneutrality: How Twitter social bots show their opinionin Chinese political issue",
+        authors: "Rongyi Chen, Qing Xiao, Haoran Dai",
+        conference: "2024 the 10th ECREA European Communication Conference (ECC)",
+        location: "Ljubljana, Slovenia"
       }
     ]
   };
