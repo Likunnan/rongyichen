@@ -229,7 +229,7 @@ const AcademicProfile = () => {
                 <User size={48} className="text-blue-500" />
               ) : (
                 <img 
-                  src="public/images/IMG_1783.jpg" 
+                  src="/rongyichen/public/images/IMG_1783.jpg" 
                   alt={profileData.name} 
                   className="w-full h-full object-cover"
                   onError={handleImageError}
