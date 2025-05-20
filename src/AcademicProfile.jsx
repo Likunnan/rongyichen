@@ -94,7 +94,7 @@ const AcademicProfile = () => {
         authors: "Rongyi Chen, Qing Xiao, Shike Lin, Menghan Yin, Jingjia Xiao, Hua Zhong, Bingbing Zhang",
         conference: "2025 Association for Education in Journalism and Mass Communication (AEJMC) 108th Annual Conference",
         location: "San Francisco, USA",
-        award: "🏆 Second Place Faculty Paper Award, Mass Communication and Society Division" // 添加奖项信息
+        award: "Second Place Faculty Paper Award, Mass Communication and Society Division" // 添加奖项信息
       },
       {
         year: "2025",
