@@ -243,9 +243,9 @@ const AcademicProfile = () => {
   // 行业经验数据
   const industryData = [
     {
-      period: "2023 - Present",
-      title: "Research Intern",
-      organization: "Microsoft Research Asia, HCI Group",
+      period: "2025 - Present",
+      title: "AI Product Manager Intern",
+      organization: "Mango TV, Intelligent Research Center",
       description: "Working on multimodal interaction projects, focusing on user experience design in mixed reality environments."
     },
     {
