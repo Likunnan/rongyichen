@@ -61,11 +61,11 @@ const AcademicProfile = () => {
   const researchData = {
     preprints: [
       {
-        year: "2024",
-        title: "Large Language Models in Communication Research: Applications and Implications",
-        authors: "Rongyi Chen, Jingjia Xiao, Zilu Wang",
+        year: "2025",
+        title: "How Multi-Channel Networks (MCNs) Govern Algorithmic Labor in Chinese Live-Streaming Industry]{Institutionalizing Folk Theories of Algorithms: How Multi-Channel Networks (MCNs) Govern Algorithmic Labor in Chinese Live-Streaming Industry",
+        authors: "Qing Xiao, Rongyi Chen, Jingjia Xiao, Tianyang Fu, Alice Qian Zhang, Xianzhe Fan, Bingbing Zhang, Zhicong Lu, Hong Shen",
         repository: "arXiv",
-        id: "2401.12345"
+        id: ""
       },
     ],
     publications: [
@@ -180,9 +180,10 @@ const AcademicProfile = () => {
     ]
   };
 
-  // 作品集数据
+// 作品集数据
   const portfolioData = {
     personalWork: {
+      /*
       visual: [
         {
           title: "Social Media Emotion Trend Visualization",
@@ -201,16 +202,25 @@ const AcademicProfile = () => {
           url: "https://example.com/transport-viz"
         }
       ],
+      */
       video: [
         {
-          title: "AI in Communication Research Documentary",
-          description: "Short documentary exploring the impact of AI technologies on communication research methodologies.",
-          year: "2024",
+          title: "Behind-the-scenes documentary of the 20th Shanghai Film Festival Film Channel Media Focus Unit",
+          description: "Video production, supplied to Bazaar Men",
+          year: "2023",
           rating: 5,
-          image: "/api/placeholder/400/240",
-          url: "https://example.com/ai-doc"
+          image: "/rongyichen/images/Video07.jpg",
+          url: "https://mp.weixin.qq.com/s/AEDOdbB2HCHjRcE0gEUDaQ"
+        },
+        {
+          title: "#Our Days Spring Retro Movie#, #Li Xiaoran, Li Naiwen, Zhou Yiran, Zhou Qi's fashionable movie with a sense of the times#",
+          description: "Video production, supplied to Bazaar Men",
+          year: "2023",
+          rating: 5,
+          image: "/rongyichen/images/Video02.jpg",
+          url: "https://wxapp.tc.qq.com/251/20302/stodownload?encfilekey=Cvvj5Ix3eez3Y79SxtvVL0L7CkPM6dFibusn4vVFEyiapvMKEbut8OYbbCwGX0J96XSYwEYCwefg3wmqE8vnAVmdUyRrQYR6eObwEZ1Yibt83QdHHUgmV7ibKWnuFNEgLopUBFGam20bPb3OBdnnon3fQQ&dotrans=0&hy=SZ&idx=1&m=c6061cbbcc8a554fc4a99eadc4f43fa8&uzid=2&token=6xykWLEnztJZXHP94vj8eEfRibbtJQkU35tiasUSPO1epWsicKZf2hoYAbkycgtwTFzR81eprZ8ia52vSZIdMjKNMaYWkYo8Vxg3JlwM4VXzvyvqDPGE3S5Ys8ZVJs5h47hxYA5ibicl2Nrnvfw2LmP9G7r4bBuOqfN3UNnarAaicLTZgo&ctsc=9488890"
         }
-      ],
+      ]/*,
       interface: [
         {
           title: "Media Literacy Learning Platform",
@@ -221,8 +231,10 @@ const AcademicProfile = () => {
           url: "https://example.com/media-platform"
         }
       ]
+      */
     },
     professionalWork: {
+      /*
       visual: [
         {
           title: "ByteDance Algorithm Performance Dashboard",
@@ -233,16 +245,49 @@ const AcademicProfile = () => {
           url: "https://example.com/bytedance-dash"
         }
       ],
+      */
       video: [
         {
-          title: "WeChat UX Research Video Series",
-          description: "User research documentation videos showcasing interaction patterns and user behaviors on WeChat.",
+          title: "Real-time physical examination of cultural relics Mogao Grottoes monitoring and early warning system",
+          description: "Video production, supplied to Xinhuanet·Science Popularization China",
           year: "2022",
-          rating: 3,
-          image: "/api/placeholder/400/240",
-          url: "https://example.com/wechat-ux"
+          rating: 5,
+          image: "/rongyichen/images/Video03.jpg",
+          url: "http://www.anhuinews.com/ahkj/kjsj/202210/t20221018_6458799.html"
+        },
+        {
+          title: "“Super mirror” chases the sun and illuminates green energy",
+          description: "Video production, supplied to Xinhuanet·Science Popularization China",
+          year: "2022",
+          rating: 5,
+          image: "/rongyichen/images/Video04.jpg",
+          url: "https://www.news.cn/science/2022-08/19/c_1310654117.htm"
+        },
+        {
+          title: "Take care of each other! #Bless the 2022 graduates with ancient poems#",
+          description: "Video production, supplied to People's Daily Weibo",
+          year: "2022",
+          rating: 5,
+          image: "/rongyichen/images/Video05.jpg",
+          url: "https://weibo.com/2803301701/LxWIfBX6y"
+        },
+        {
+          title: "It's youth! 10 BGMs to play on loop during the graduation season#",
+          description: "Video production, supplied to People's Daily Weibo",
+          year: "2022",
+          rating: 5,
+          image: "/rongyichen/images/Video06.jpg",
+          url: "https://weibo.com/2803301701/LvOvmiK1s"
+        },
+        {
+          title: "Selling special foods is a little special. #Implementing two responsibilities to build a food safety Beijing#",
+          description: "Video production, supplied to Beijing Municipal Administration for Market Regulation",
+          year: "2024",
+          rating: 5,
+          image: "/rongyichen/images/Video01.jpg",
+          url: "https://wxapp.tc.qq.com/251/20302/stodownload?encfilekey=Cvvj5Ix3eez3Y79SxtvVL0L7CkPM6dFibusn4vVFEyiapvMKEbut8OYbbCwGX0J96XSYwEYCwefg3wmqE8vnAVmdUyRrQYR6eObwEZ1Yibt83QdHHUgmV7ibKWnuFNEgLopUBFGam20bPb3OBdnnon3fQQ&dotrans=0&hy=SZ&idx=1&m=c6061cbbcc8a554fc4a99eadc4f43fa8&uzid=2&token=6xykWLEnztJZXHP94vj8eEfRibbtJQkU35tiasUSPO1epWsicKZf2hoYAbkycgtwTFzR81eprZ8ia52vSZIdMjKNMaYWkYo8Vxg3JlwM4VXzvyvqDPGE3S5Ys8ZVJs5h47hxYA5ibicl2Nrnvfw2LmP9G7r4bBuOqfN3UNnarAaicLTZgo&ctsc=9488890"
         }
-      ],
+      ]/*,
       interface: [
         {
           title: "Mango TV AI Content Analysis Tool",
@@ -253,6 +298,7 @@ const AcademicProfile = () => {
           url: "https://example.com/mango-ai"
         }
       ]
+      */
     }
   };
 
@@ -340,13 +386,13 @@ const industryData = [
     },
     {
       period: "2023-2025",
-      title: "Editor Intern",
+      title: "Multimedia Content Editor Intern",
       organization: "University of Chicago, Harris School of Public Policy",
       description: "Assisted multiple degree and certificate programs with China region enrollment community management, video production, and promotional material design. Managed Chinese social media operations and lecture material distribution for academic programs."
     },
     {
       period: "2023",
-      title: "Videographer Intern",
+      title: "Cinematography Intern",
       organization: "BAZAAR Men",
       description: "Assisted in video production for the daily program 'We Are in the Day', featuring celebrity interviews and entertainment content. Collaborated on CCTV-6 movie channel's film promotion projects involving red carpet events and premiere coverage."
     },
@@ -358,7 +404,7 @@ const industryData = [
     },
     {
       period: "2022",
-      title: "Journalist Intern",
+      title: "Multimedia Content Editor Intern",
       organization: "People's Daily, Weibo Department",
       description: "Planned and produced viral video content including trending topics that reached #2 and #3 on Weibo hot search, generating millions of views and tens of millions of reads. Assisted in social media sentiment monitoring and early warning systems for trending events."
     },
