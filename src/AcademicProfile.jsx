@@ -263,7 +263,7 @@ const AcademicProfile = () => {
         year: "2025",
         title: "Research Report on the Transformation of News Production and Dissemination Models in Mainstream Media Based on Artificial Intelligence Technology",
         role: "Co-PI",
-        program: "Hunan Broadcasting System Fellowship Program",
+        program: "Hunan Broadcasting System Research Fellowship Program",
         amount: "CN¥100,000"
       },
       {
@@ -341,8 +341,8 @@ const industryData = [
     {
       period: "2023-2025",
       title: "Editor Intern",
-      organization: "Harris School of Public Policy",
-      description: "Collaborated on social media research projects analyzing platform algorithms and user engagement patterns. Contributed to policy-oriented content creation and data-driven editorial decisions."
+      organization: "University of Chicago, Harris School of Public Policy",
+      description: "Assisted multiple degree and certificate programs with China region enrollment community management, video production, and promotional material design. Managed Chinese social media operations and lecture material distribution for academic programs."
     },
     {
       period: "2023",
@@ -353,31 +353,31 @@ const industryData = [
     {
       period: "2022 - 2023",
       title: "Assistant Director Intern",
-      organization: "China Movie Official Channel",
-      description: "Assisted in film production coordination and content curation for movie promotion campaigns. Supported directing team in managing production schedules and quality control processes."
+      organization: "China Movie Official Channel (CCTV-6), 1905 Movie Network",
+      description: "Served as on-site director for major film industry events including the 2022 'Star Ocean' Young Actor Selection Program and '5G+360° Golden Rooster Awards' immersive live broadcast. Executive director for the 35th Golden Rooster Awards ceremony and coordinator for the 5th anniversary launch of the Star Ocean program."
     },
     {
       period: "2022",
       title: "Journalist Intern",
-      organization: "People's Daily",
-      description: "Conducted investigative reporting and interviews, contributing to national news coverage. Developed multimedia content combining traditional journalism with digital storytelling techniques."
-    },
-    {
-      period: "2021",
-      title: "Marketing Intern",
-      organization: "Ximalaya Technology Co., Ltd.",
-      description: "Developed digital marketing strategies for audio content platforms, analyzing user acquisition metrics and engagement data to optimize campaign performance and content recommendation systems."
+      organization: "People's Daily, Weibo Department",
+      description: "Planned and produced viral video content including trending topics that reached #2 and #3 on Weibo hot search, generating millions of views and tens of millions of reads. Assisted in social media sentiment monitoring and early warning systems for trending events."
     },
     {
       period: "2021",
       title: "Live-streaming Technology Specialist",
-      organization: "Alibaba Entertainment Group - Youku/Laifeng",
-      description: "Provided technical support for live-streaming operations, managing broadcast quality control, audience interaction systems, and real-time content moderation for entertainment programs."
+      organization: "Alibaba Entertainment Group, Youku/Laifeng",
+      description: "Assisted in testing and data evaluation of innovative live streaming products including digital humans and interactive gaming features. Supported multiple live streaming teams with audience management, operations optimization, and technical training initiatives."
+    },
+    {
+      period: "2021",
+      title: "Marketing Intern",
+      organization: "Ximalaya Technology Co., Ltd., Marketing Department",
+      description: "Assisted in establishing 'Ximalaya Campus Partner Program' and 'Campus Broadcaster' initiatives, including rule development and pitch presentation implementation. Facilitated partnerships with over 200 university student organizations across China."
     },
     {
       period: "2020 - 2021",
       title: "Journalist Intern",
-      organization: "Zhanjiang Radio and Television Station",
+      organization: "Zhanjiang Radio and Television Station, Local News Department",
       description: "Produced news segments and documentary content for local television broadcasts, conducting field reporting and managing multimedia production workflows for regional audience engagement."
     }
   ];
