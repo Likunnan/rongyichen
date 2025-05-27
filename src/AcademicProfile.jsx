@@ -73,7 +73,7 @@ const AcademicProfile = () => {
       },
       {
         year: "2024",
-        title: "The power of the civilian hero: Effective strategies for local media coverage in response to information epidemics",
+        title: "“The power of the civilian hero”: Effective strategies for local media coverage in response to information epidemics",
         authors: "Chuchu Zhao, Rongyi Chen*",
         journal: "Local journalism, global challenges: News deserts, infodemic and the vastness in between (pp. 171-200); LabCom Books. ISBN 978-989-654-970-1",
         doi: "https://ecrea.eu/page-18206/13312675"
@@ -249,47 +249,55 @@ const AcademicProfile = () => {
     computationalCommunication: [
       {
         title: "Intelligent Early Warning of International Public Opinion Based on Multimodal Data Fusion",
+        meta: "2024-2025 | Central South University | Advisor: Professor Yalong Xiao",
         description: "Research Assistant, Central South University (School of Computer Science and Engineering)",
-        tech: ["2024-2025","Outstanding Young Scholar Program of the Hunan Provincial Department of Education: 24B0023", "Advisor: Professor Yalong Xiao"]
+        tech: ["Outstanding Young Scholar Program of the Hunan Provincial Department of Education: 24B0023"]
       },
       {
         title: "Research and Demonstration of Key Multimodal AI Technologies for Precision International Communication",
+        meta: "2024-2025 | Central South University | Advisor: Professor Chengzhang Zhu",
         description: "Research Assistant, Central South University (School of Computer Science and Engineering)",
-        tech: ["2024-2025", "Key R&D Program of Hunan Province: 2024JK2023", "Advisor: Professor Chengzhang Zhu"]
+        tech: ["Key R&D Program of Hunan Province: 2024JK2023"]
       },
       {
         title: "Study on International Public Opinion Dynamics in Major Emergencies on Social Media",
+        meta: "2024-2025 | Central South University | Advisor: Professor Jie Zhang",
         description: "Research Assistant, Central South University (School of Humanities)",
-        tech: ["2024-2025", "Youth Project of the Ministry of Education's Humanities and Social Sciences Fund: 22YJC860007", "Advisor: Professor Jie Zhang"]
+        tech: ["Youth Project of the Ministry of Education's Humanities and Social Sciences Fund: 22YJC860007"]
       },
       {
         title: "2021 Live Stream Host Professional Ethics Enhancement and Live Streaming Industry Standards Development",
+        meta: "2021 | Communication University of China | Advisor: Professor Jie Zhang",
         description: "Research Assistant, Communication University of China (Institute of Communication Studies)",
-        tech: ["2021", "National Industry Standard Development Funding: HW21144","Advisor: Professor Jie Zhang"]
+        tech: ["National Industry Standard Development Funding: HW21144"]
       }
     ],
     digitalSociology: [
       {
         title: "Research on the Representation and Related Discourses of Various Chinese Ethnicities in Global Social Media",
+        meta: "2022-2023 | Communication University of China | Advisor: Professor Baoqin Xue",
         description: "Research Assistant, Communication University of China (Institute of Communication Studies)",
-        tech: ["2022-2023", "National Ethnic Affairs Commission Youth Ethnic Funding: 2021-GMC-052", "Advisor: Professor Baoqin Xue"]
+        tech: ["National Ethnic Affairs Commission Youth Ethnic Funding: 2021-GMC-052"]
       },
       {
         title: "Cultivating Adolescents' Digital Literacy and Value Orientation in a Media Convergence Environment",
+        meta: "2020-2021 | Communication University of China | Advisor: Professor Kai Zhang",
         description: "Research Assistant, Communication University of China (Institute of Communication Studies)",
-        tech: ["2020-2021", "National Social Science Funding: 19BXW087", "Advisor: Professor Kai Zhang"]
+        tech: ["National Social Science Funding: 19BXW087"]
       }
     ],
     empiricalStudies: [
       {
         title: "Enterprise Survey for Innovation and Entrepreneurship in China, ESIEC",
+        meta: "2023 | Peking University | Advisor: Professor Xiaobo Zhang",
         description: "Research Assistant, Peking University (Enterprise Big Data Research Center)",
-        tech: ["2023", "Advisor: Professor Xiaobo Zhang"]
+        tech: ["Enterprise Big Data Research Project"]
       },
       {
         title: "Mianzhu Children's Cognitive and Non-cognitive Abilities Development Tracking Project",
+        meta: "2020 | Jinan University | Advisor: Professor James J. Heckman",
         description: "Research Assistant, Jinan University (Survey Data Center)",
-        tech: ["2020", "Advisor: Professor James J. Heckman"]
+        tech: ["Longitudinal Child Development Study"]
       }
     ]
   };
@@ -795,7 +803,8 @@ const AcademicProfile = () => {
                       whileHover={{ y: -4, boxShadow: '0 6px 12px rgba(0,0,0,0.1)' }}
                       className="bg-white rounded-lg shadow-sm border border-gray-100 p-5"
                     >
-                      <h4 className="font-semibold mb-2 text-gray-800">{project.title}</h4>
+                      <h4 className="font-semibold mb-1 text-gray-800">{project.title}</h4>
+                      <p className="text-sm text-gray-500 italic mb-3">{project.meta}</p>
                       <p className="text-sm text-gray-600 mb-4">{project.description}</p>
                       <div className="flex flex-wrap gap-2">
                         {project.tech.map((tech, techIndex) => (
@@ -823,7 +832,8 @@ const AcademicProfile = () => {
                       whileHover={{ y: -4, boxShadow: '0 6px 12px rgba(0,0,0,0.1)' }}
                       className="bg-white rounded-lg shadow-sm border border-gray-100 p-5"
                     >
-                      <h4 className="font-semibold mb-2 text-gray-800">{project.title}</h4>
+                      <h4 className="font-semibold mb-1 text-gray-800">{project.title}</h4>
+                      <p className="text-sm text-gray-500 italic mb-3">{project.meta}</p>
                       <p className="text-sm text-gray-600 mb-4">{project.description}</p>
                       <div className="flex flex-wrap gap-2">
                         {project.tech.map((tech, techIndex) => (
@@ -851,7 +861,8 @@ const AcademicProfile = () => {
                       whileHover={{ y: -4, boxShadow: '0 6px 12px rgba(0,0,0,0.1)' }}
                       className="bg-white rounded-lg shadow-sm border border-gray-100 p-5"
                     >
-                      <h4 className="font-semibold mb-2 text-gray-800">{project.title}</h4>
+                      <h4 className="font-semibold mb-1 text-gray-800">{project.title}</h4>
+                      <p className="text-sm text-gray-500 italic mb-3">{project.meta}</p>
                       <p className="text-sm text-gray-600 mb-4">{project.description}</p>
                       <div className="flex flex-wrap gap-2">
                         {project.tech.map((tech, techIndex) => (
