@@ -13,7 +13,7 @@ const AcademicProfile = () => {
     title: "M.A. Student in Computational Communication (Expected 2026)",
     institution: "Center for Intelligent Media & Communication Research, Central South University",
     email: "rongyi@csu.edu.cn",
-    bio: "I'm a researcher focusing on computational communication, with particular interests in multimodal social media analytics, human-computer interaction, and collaborative systems. My work aims to bridge technology and communication studies to understand how digital platforms shape information diffusion and public sentiment.",
+    bio: "I'm a researcher focusing on computational communication, with particular interests in multimodal social media analytics, human-computer interaction, and collaborative systems. My work aims to bridge technology and communication studies to understand how digital platforms shape information diffusion and public sentiment. This interdisciplinary approach extends to my professional practice, where I maintain ongoing collaborative partnerships in multimedia content production with prestigious institutions including the China Association for Science and Technology, Xinhua News Agency's Science Popularization China, and various government agencies and universities.",
     researchAreas: ["Computational Communication", "Multimodal Social Media Diffusion and Sentiment Analytics", "Human-computer interaction(HCI)", "Computer-Supported Cooperative Work(CSCW)"],
     socialMedia: [
       { name: "Google Scholar", icon: Award, url: "https://scholar.google.com/citations?user=aFi4Wd0AAAAJ&hl=en" },
@@ -34,20 +34,25 @@ const AcademicProfile = () => {
       },
       {
         date: "2025-03-13",
-        title: " 4 * International Conference Acceptance Notifications! ",
+        title: "📧 4 * Conference Acceptance Notifications! ",
         content: "I am pleased to announce that four of my co-authored papers have been accepted to prestigious international communication conferences. As first author, two papers will be presented at the ICA Annual Conference and ICA Pre-Conference respectively. Additionally, I served as second author on a paper accepted to the IAMCR Annual Conference, and as third author on another paper also accepted to the ICA Annual Conference."
       }
     ],
     nonAcademic: [
       {
-        date: "2024-01-10",
-        title: "Journal Editorial Appointment",
-        content: "Appointed as Associate Editor for IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)."
+        date: "2025-05-16",
+        title: "🎤 AI Virtual Audience System Deployed in Top-Tier Variety Show",
+        content: "Co-designed AI-powered 'Virtual Audience' features successfully implemented in the live broadcast of 'Singer 2025', one of China's premier variety shows on Mango TV. The system includes real-time facial expression analysis and emoji visualization for 500+ audience members simultaneously."
       },
       {
-        date: "2023-12-05",
-        title: "Campus Event Organization",
-        content: "Organized and hosted an interdisciplinary research workshop that attracted participants from multiple departments."
+        date: "2025-05-15",
+        title: "🎧 Interactive AI System Launch in Entertainment Production",
+        content: "Led the design and deployment of an advanced AI interaction system for 'Sisters Who Make Life Better', a derivative show of the top-tier variety program 'Ride the Wind 2025'. The system features celebrity personality simulation based on comprehensive databases, enabling customizable character interactions with significantly reduced latency for production environments."
+      },
+      {
+        date: "2025-05-14",
+        title: "😊 Real-time AI Comedy Evaluation System Goes Live",
+        content: "Co-developed an innovative AI-powered comedy scoring system utilizing large-scale real-time facial expression analysis as evaluation criteria. The system, featuring precise facial feature matching and comprehensive visualization components, made its debut on Mango TV's variety show 'Ha Ha No Worries'."
       }
     ]
   };
@@ -326,24 +331,54 @@ const AcademicProfile = () => {
   };
 
   // 行业经验数据
-  const industryData = [
+const industryData = [
     {
       period: "2025 - Present",
       title: "AI Product Manager Intern",
       organization: "Mango TV, Intelligent Research Center",
-      description: "Working on multimodal interaction projects, focusing on user experience design in mixed reality environments."
+      description: "Led design and implementation of AI-powered entertainment systems including real-time facial expression analysis for comedy evaluation, celebrity personality simulation with reduced latency, and virtual audience features for top-tier variety shows like 'Singer 2025' and 'Ride the Wind 2025'."
+    },
+    {
+      period: "2023-2025",
+      title: "Editor Intern",
+      organization: "Harris School of Public Policy",
+      description: "Collaborated on social media research projects analyzing platform algorithms and user engagement patterns. Contributed to policy-oriented content creation and data-driven editorial decisions."
+    },
+    {
+      period: "2023",
+      title: "Videographer Intern",
+      organization: "BAZAAR Men",
+      description: "Assisted in video production for the daily program 'We Are in the Day', featuring celebrity interviews and entertainment content. Collaborated on CCTV-6 movie channel's film promotion projects involving red carpet events and premiere coverage."
     },
     {
       period: "2022 - 2023",
-      title: "Data Analyst Intern",
-      organization: "ByteDance, Douyin Algorithm Team",
-      description: "Analyzed user behavior data to improve content recommendation algorithms. Conducted A/B tests to evaluate model improvements."
+      title: "Assistant Director Intern",
+      organization: "China Movie Official Channel",
+      description: "Assisted in film production coordination and content curation for movie promotion campaigns. Supported directing team in managing production schedules and quality control processes."
     },
     {
-      period: "2021 - 2022",
-      title: "UX Research Assistant",
-      organization: "Tencent, WeChat User Experience Lab",
-      description: "Assisted in designing and conducting user experience studies. Produced research reports and recommendations for product improvements."
+      period: "2022",
+      title: "Journalist Intern",
+      organization: "People's Daily",
+      description: "Conducted investigative reporting and interviews, contributing to national news coverage. Developed multimedia content combining traditional journalism with digital storytelling techniques."
+    },
+    {
+      period: "2021",
+      title: "Marketing Intern",
+      organization: "Ximalaya Technology Co., Ltd.",
+      description: "Developed digital marketing strategies for audio content platforms, analyzing user acquisition metrics and engagement data to optimize campaign performance and content recommendation systems."
+    },
+    {
+      period: "2021",
+      title: "Live-streaming Technology Specialist",
+      organization: "Alibaba Entertainment Group - Youku/Laifeng",
+      description: "Provided technical support for live-streaming operations, managing broadcast quality control, audience interaction systems, and real-time content moderation for entertainment programs."
+    },
+    {
+      period: "2020 - 2021",
+      title: "Journalist Intern",
+      organization: "Zhanjiang Radio and Television Station",
+      description: "Produced news segments and documentary content for local television broadcasts, conducting field reporting and managing multimedia production workflows for regional audience engagement."
     }
   ];
 
