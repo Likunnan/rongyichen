@@ -226,9 +226,9 @@ const AcademicProfile = () => {
     ],
     mediaEducation: [
       {
-        title: "Media Literacy Education APP Design",
-        description: "Design of a media literacy education application for primary and secondary school students, including gamified learning content.",
-        tech: ["UI Design", "Education"]
+        title: "Cultivating Adolescents' Digital Literacy and Value Orientation in a Media Convergence Environment (National Social Science Funding: 19BXW087)",
+        description: "Advisor: Professor Kai Zhang.",
+        tech: ["RA", "Advisor: Professor Kai Zhang"]
       }
     ],
     other: [
