@@ -33,9 +33,9 @@ const AcademicProfile = () => {
         content: "My co-authored paper has been accepted to the Mass Communication and Society Division session at the 2025 AEJMC 108th Annual Conference (as first author). I will be presenting at the MCS Top Refereed Research Paper Session."
       },
       {
-        date: "2024-02-28",
-        title: "Research Grant Approved",
-        content: "Successfully secured a National Science Foundation grant for the project 'Multimodal Learning Theory and Methods'."
+        date: "2025-03-13",
+        title: " 4 * International Conference Acceptance Notifications! ",
+        content: "I am pleased to announce that four of my co-authored papers have been accepted to prestigious international communication conferences. As first author, two papers will be presented at the ICA Annual Conference and ICA Pre-Conference respectively. Additionally, I served as second author on a paper accepted to the IAMCR Annual Conference, and as third author on another paper also accepted to the ICA Annual Conference."
       }
     ],
     nonAcademic: [
@@ -152,6 +152,13 @@ const AcademicProfile = () => {
         location: "Guangzhou, China"
       },
       {
+        year: "2024",
+        title: " Queering Sexual Desires through Recommendation Algorithms: Douyin, Soft-core Pornography Male Influencers, and Female/Male Homosexual Fans",
+        authors: "Rongyi Chen, Qing Xiao, Jingjia Xiao",
+        conference: "Cambridge Queer Studies Conference 2024",
+        location: "Cambridge, UK"
+      },
+      {
         year: "2023",
         title: "Focus on Supporting Roles in TikTok's Live-streaming E-commerce: How Do Assistant Anchors Affect Audiences' Purchase Intention?",
         authors: "Rongyi Chen, Shike Lin, Huiying Zhang",
@@ -246,58 +253,74 @@ const AcademicProfile = () => {
 
   // 重新组织的项目数据
   const projectsData = {
+    grants: [
+      {
+        year: "2025",
+        title: "Research Report on the Transformation of News Production and Dissemination Models in Mainstream Media Based on Artificial Intelligence Technology",
+        role: "Co-PI",
+        program: "Hunan Broadcasting System Fellowship Program",
+        amount: "CN¥100,000"
+      },
+      {
+        year: "2023-2024",
+        title: "Misinformation and Public Opinion: Crisis Communication on Hunan's Social Media Platforms",
+        role: "Co-PI", 
+        program: "Hunan Daily Research Fellowship Program",
+        amount: "CN¥30,000"
+      }
+    ],
     computationalCommunication: [
       {
         title: "Intelligent Early Warning of International Public Opinion Based on Multimodal Data Fusion",
-        meta: "2024-2025 | Central South University | Advisor: Professor Yalong Xiao",
-        description: "Research Assistant, Central South University (School of Computer Science and Engineering)",
+        meta: "2024-2025, School of Computer Science and Engineering, Central South University",
+        description: "Research Assistant",
         tech: ["Outstanding Young Scholar Program of the Hunan Provincial Department of Education: 24B0023"]
       },
       {
         title: "Research and Demonstration of Key Multimodal AI Technologies for Precision International Communication",
-        meta: "2024-2025 | Central South University | Advisor: Professor Chengzhang Zhu",
-        description: "Research Assistant, Central South University (School of Computer Science and Engineering)",
+        meta: "2024-2025, School of Computer Science and Engineering, Central South University",
+        description: "Research Assistant",
         tech: ["Key R&D Program of Hunan Province: 2024JK2023"]
       },
       {
         title: "Study on International Public Opinion Dynamics in Major Emergencies on Social Media",
-        meta: "2024-2025 | Central South University | Advisor: Professor Jie Zhang",
-        description: "Research Assistant, Central South University (School of Humanities)",
+        meta: "2024-2025, School of Humanities, Central South University",
+        description: "Research Assistant",
         tech: ["Youth Project of the Ministry of Education's Humanities and Social Sciences Fund: 22YJC860007"]
       },
       {
-        title: "2021 Live Stream Host Professional Ethics Enhancement and Live Streaming Industry Standards Development",
-        meta: "2021 | Communication University of China | Advisor: Professor Jie Zhang",
-        description: "Research Assistant, Communication University of China (Institute of Communication Studies)",
+        title: "Live Stream Host Professional Ethics Enhancement and Live Streaming Industry Standards Development",
+        meta: "2021, Institute of Communication Studies, Communication University of China",
+        description: "Research Assistant",
         tech: ["National Industry Standard Development Funding: HW21144"]
+      },
+            {
+        title: "Research on the Representation and Related Discourses of Various Chinese Ethnicities in Global Social Media",
+        meta: "2022-2023,  Institute of Communication Studies, Communication University of China",
+        description: "Research Assistant,",
+        tech: ["National Ethnic Affairs Commission Youth Ethnic Funding: 2021-GMC-052"]
       }
     ],
     digitalSociology: [
       {
-        title: "Research on the Representation and Related Discourses of Various Chinese Ethnicities in Global Social Media",
-        meta: "2022-2023 | Communication University of China | Advisor: Professor Baoqin Xue",
-        description: "Research Assistant, Communication University of China (Institute of Communication Studies)",
-        tech: ["National Ethnic Affairs Commission Youth Ethnic Funding: 2021-GMC-052"]
-      },
-      {
         title: "Cultivating Adolescents' Digital Literacy and Value Orientation in a Media Convergence Environment",
-        meta: "2020-2021 | Communication University of China | Advisor: Professor Kai Zhang",
-        description: "Research Assistant, Communication University of China (Institute of Communication Studies)",
+        meta: "2020-2021, Institute of Communication Studies, Communication University of China",
+        description: "Research Assistant",
         tech: ["National Social Science Funding: 19BXW087"]
       }
     ],
     empiricalStudies: [
       {
         title: "Enterprise Survey for Innovation and Entrepreneurship in China, ESIEC",
-        meta: "2023 | Peking University | Advisor: Professor Xiaobo Zhang",
-        description: "Research Assistant, Peking University (Enterprise Big Data Research Center)",
-        tech: ["Enterprise Big Data Research Project"]
+        meta: "2023, Enterprise Big Data Research Center, Peking University",
+        description: "Research Assistant",
+        tech: [""]
       },
       {
         title: "Mianzhu Children's Cognitive and Non-cognitive Abilities Development Tracking Project",
-        meta: "2020 | Jinan University | Advisor: Professor James J. Heckman",
-        description: "Research Assistant, Jinan University (Survey Data Center)",
-        tech: ["Longitudinal Child Development Study"]
+        meta: "2020, Survey Data Center, Jinan University",
+        description: "Research Assistant",
+        tech: [""]
       }
     ]
   };
@@ -789,6 +812,63 @@ const AcademicProfile = () => {
               transition={{ duration: 0.3 }}
               className="space-y-10"
             >
+              {/* Grants Section */}
+              <div>
+                <div className="flex items-center mb-6">
+                  <div className="w-3 h-8 bg-gradient-to-b from-yellow-400 to-orange-500 rounded mr-3"></div>
+                  <h3 className="text-xl font-semibold text-gray-800">Research Grants</h3>
+                  <div className="ml-3 px-3 py-1 bg-gradient-to-r from-yellow-50 to-orange-50 border border-yellow-200 rounded-full">
+                    <span className="text-xs font-medium text-yellow-700">Co-Principal Investigator</span>
+                  </div>
+                </div>
+                
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  {projectsData.grants.map((grant, index) => (
+                    <motion.div
+                      key={index}
+                      whileHover={{ y: -4, boxShadow: '0 8px 16px rgba(251, 191, 36, 0.15)' }}
+                      className="bg-gradient-to-br from-white to-yellow-50 rounded-lg shadow-sm border-2 border-yellow-100 p-6 relative overflow-hidden"
+                    >
+                      {/* 装饰性背景元素 */}
+                      <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-yellow-100 to-orange-100 rounded-full opacity-30 -translate-y-10 translate-x-10"></div>
+                      
+                      <div className="relative z-10">
+                        <div className="flex items-center justify-between mb-3">
+                          <span className="px-3 py-1 bg-gradient-to-r from-yellow-100 to-orange-100 text-yellow-800 rounded-full text-sm font-medium">
+                            {grant.year}
+                          </span>
+                          <div className="flex items-center">
+                            <span className="text-lg mr-1">💰</span>
+                            <span className="font-bold text-gray-700">{grant.amount}</span>
+                          </div>
+                        </div>
+                        
+                        <h4 className="font-semibold mb-2 text-gray-800 leading-tight">{grant.title}</h4>
+                        
+                        <div className="space-y-2 mb-4">
+                          <div className="flex items-center">
+                            <span className="text-xs font-medium text-yellow-700 bg-yellow-100 px-2 py-1 rounded mr-2">
+                              {grant.role}
+                            </span>
+                          </div>
+                          <p className="text-sm italic text-gray-600">{grant.program}</p>
+                        </div>
+                        
+                        {/* 进度指示器 */}
+                        <div className="flex items-center mt-4">
+                          <div className="flex-1 bg-yellow-100 rounded-full h-2 mr-3">
+                            <div className={`h-2 rounded-full bg-gradient-to-r from-yellow-400 to-orange-400 ${grant.year === '2025' ? 'w-1/4' : 'w-full'}`}></div>
+                          </div>
+                          <span className="text-xs text-gray-500">
+                            {grant.year === '2025' ? 'In Progress' : 'Completed'}
+                          </span>
+                        </div>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+
               {/* Computational Communication & Social Media Research */}
               <div>
                 <div className="flex items-center mb-4">
