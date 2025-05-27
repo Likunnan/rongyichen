@@ -1044,20 +1044,24 @@ const industryData = [
                           {video.description}
                         </p>
                         
-                        {/* 机构标签和查看链接 */}
-                        <div className="flex items-center justify-between">
-                          <span className="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded border">
-                            {video.organization}
-                          </span>
-                          <a 
-                            href={video.url} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-sm font-medium rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-200 group-hover:shadow-lg"
-                          >
-                            <Film size={16} className="mr-2" />
-                            Watch Video
-                          </a>
+                        {/* 机构标签和查看链接 - 改为上下布局 */}
+                        <div className="space-y-3">
+                          <div className="flex justify-start">
+                            <span className="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded border">
+                              {video.organization}
+                            </span>
+                          </div>
+                          <div className="flex justify-end">
+                            <a 
+                              href={video.url} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-sm font-medium rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-200 group-hover:shadow-lg"
+                            >
+                              <Film size={16} className="mr-2" />
+                              Watch Video
+                            </a>
+                          </div>
                         </div>
                       </div>
                       
