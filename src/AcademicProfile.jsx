@@ -62,7 +62,6 @@ const AcademicProfile = () => {
         repository: "arXiv",
         id: "2401.12345"
       },
-
     ],
     publications: [
       {
@@ -74,7 +73,7 @@ const AcademicProfile = () => {
       },
       {
         year: "2024",
-        title: "“The power of the civilian hero”: Effective strategies for local media coverage in response to information epidemics",
+        title: "The power of the civilian hero: Effective strategies for local media coverage in response to information epidemics",
         authors: "Chuchu Zhao, Rongyi Chen*",
         journal: "Local journalism, global challenges: News deserts, infodemic and the vastness in between (pp. 171-200); LabCom Books. ISBN 978-989-654-970-1",
         doi: "https://ecrea.eu/page-18206/13312675"
@@ -94,7 +93,7 @@ const AcademicProfile = () => {
         authors: "Rongyi Chen, Qing Xiao, Shike Lin, Menghan Yin, Jingjia Xiao, Hua Zhong, Bingbing Zhang",
         conference: "2025 Association for Education in Journalism and Mass Communication (AEJMC) 108th Annual Conference",
         location: "San Francisco, USA",
-        award: "Second Place Faculty Paper Award, Mass Communication and Society Division" // 添加奖项信息
+        award: "Second Place Faculty Paper Award, Mass Communication and Society Division"
       },
       {
         year: "2025",
@@ -170,68 +169,118 @@ const AcademicProfile = () => {
   };
 
   // 作品集数据
-  const portfolioData = [
-    {
-      title: "Social Media Data Visualization",
-      description: "A visualization system for sentiment analysis of trending events on Weibo, showing public emotional trends.",
-      image: "/api/placeholder/400/240",
-      url: "https://example.com/social-viz"
+  const portfolioData = {
+    personalWork: {
+      visual: [
+        {
+          title: "Social Media Emotion Trend Visualization",
+          description: "Data visualization showing public emotional trends during major social events on Weibo platform.",
+          year: "2024",
+          rating: 4,
+          image: "/api/placeholder/400/240",
+          url: "https://example.com/social-viz"
+        },
+        {
+          title: "Urban Transportation Data Dashboard",
+          description: "Interactive dashboard analyzing traffic patterns and public transport efficiency in major cities.",
+          year: "2023",
+          rating: 3,
+          image: "/api/placeholder/400/240",
+          url: "https://example.com/transport-viz"
+        }
+      ],
+      video: [
+        {
+          title: "AI in Communication Research Documentary",
+          description: "Short documentary exploring the impact of AI technologies on communication research methodologies.",
+          year: "2024",
+          rating: 5,
+          image: "/api/placeholder/400/240",
+          url: "https://example.com/ai-doc"
+        }
+      ],
+      interface: [
+        {
+          title: "Media Literacy Learning Platform",
+          description: "Educational platform designed for adolescents to improve digital media literacy through gamification.",
+          year: "2023",
+          rating: 4,
+          image: "/api/placeholder/400/240",
+          url: "https://example.com/media-platform"
+        }
+      ]
     },
-    {
-      title: "Interactive Data Report",
-      description: "A data journalism report on urban transportation issues, featuring interactive charts and user engagement elements.",
-      image: "/api/placeholder/400/240",
-      url: "https://example.com/data-report"
-    },
-    {
-      title: "Short Video Content Analysis Tool",
-      description: "A tool that automatically analyzes content features, sentiment tendencies, and propagation paths of popular Douyin videos.",
-      image: "/api/placeholder/400/240",
-      url: "https://example.com/video-analysis"
+    professionalWork: {
+      visual: [
+        {
+          title: "ByteDance Algorithm Performance Dashboard",
+          description: "Real-time performance monitoring system for content recommendation algorithms at ByteDance.",
+          year: "2023",
+          rating: 5,
+          image: "/api/placeholder/400/240",
+          url: "https://example.com/bytedance-dash"
+        }
+      ],
+      video: [
+        {
+          title: "WeChat UX Research Video Series",
+          description: "User research documentation videos showcasing interaction patterns and user behaviors on WeChat.",
+          year: "2022",
+          rating: 3,
+          image: "/api/placeholder/400/240",
+          url: "https://example.com/wechat-ux"
+        }
+      ],
+      interface: [
+        {
+          title: "Mango TV AI Content Analysis Tool",
+          description: "AI-powered content analysis interface for automated video content categorization and recommendation.",
+          year: "2025",
+          rating: 5,
+          image: "/api/placeholder/400/240",
+          url: "https://example.com/mango-ai"
+        }
+      ]
     }
-  ];
+  };
 
-  // 个人项目数据
+  // 重新组织的项目数据
   const projectsData = {
-    shortVideo: [
+    computationalCommunication: [
       {
-        title: "Douyin User Behavior Research",
-        description: "Analysis of the relationship between user interaction behaviors and content recommendation mechanisms on Douyin platform.",
-        tech: ["Python", "Data Mining", "Statistical Analysis"]
+        title: "Intelligent Early Warning of International Public Opinion Based on Multimodal Data Fusion",
+        description: "Research Assistant, Central South University (School of Computer Science and Engineering)",
+        tech: ["2024-2025","Outstanding Young Scholar Program of the Hunan Provincial Department of Education: 24B0023", "Advisor: Professor Yalong Xiao"]
       },
       {
-        title: "Live Streaming Interaction Pattern Analysis",
-        description: "Research on user interaction patterns in different types of live streaming rooms, including tipping behaviors and comment features.",
-        tech: ["Content Analysis", "Social Network Analysis"]
-      }
-    ],
-    socialMedia: [
-      {
-        title: "Weibo Public Opinion Evolution Model",
-        description: "Construction of a computational model for the evolution of public opinion on Weibo platform, predicting emotional trends of hot events.",
-        tech: ["Sentiment Analysis", "Time Series Modeling"]
+        title: "Research and Demonstration of Key Multimodal AI Technologies for Precision International Communication",
+        description: "Research Assistant, Central South University (School of Computer Science and Engineering)",
+        tech: ["2024-2025", "Key R&D Program of Hunan Province: 2024JK2023", "Advisor: Professor Chengzhang Zhu"]
       },
       {
-        title: "Xiaohongshu Effectiveness Evaluation",
-        description: "Development of assessment tools to analyze the relationship between the spread effects of Xiaohongshu notes and user purchase intentions.",
-        tech: ["Text Mining", "Effectiveness Assessment"]
+        title: "Study on International Public Opinion Dynamics in Major Emergencies on Social Media",
+        description: "Research Assistant, Central South University (School of Humanities)",
+        tech: ["2024-2025", "Youth Project of the Ministry of Education's Humanities and Social Sciences Fund: 22YJC860007", "Advisor: Professor Jie Zhang"]
+      },
+      {
+        title: "2021 Live Stream Host Professional Ethics Enhancement and Live Streaming Industry Standards Development",
+        description: "Research Assistant, Communication University of China (Institute of Communication Studies)",
+        tech: ["2021", "National Industry Standard Development Funding: HW21144","Advisor: Professor Jie Zhang"]
       }
     ],
-    computationalSocial: [
+    digitalSociology: [
       {
         title: "Research on the Representation and Related Discourses of Various Chinese Ethnicities in Global Social Media",
         description: "Research Assistant, Communication University of China (Institute of Communication Studies)",
-        tech: ["National Ethnic Affairs Commission Youth Ethnic Funding: 2021-GMC-052", "Advisor: Professor Baoqin Xue"]
-      }
-    ],
-    mediaEducation: [
+        tech: ["2022-2023", "National Ethnic Affairs Commission Youth Ethnic Funding: 2021-GMC-052", "Advisor: Professor Baoqin Xue"]
+      },
       {
         title: "Cultivating Adolescents' Digital Literacy and Value Orientation in a Media Convergence Environment",
         description: "Research Assistant, Communication University of China (Institute of Communication Studies)",
-        tech: ["National Social Science Funding: 19BXW087", "Advisor: Professor Kai Zhang"]
+        tech: ["2020-2021", "National Social Science Funding: 19BXW087", "Advisor: Professor Kai Zhang"]
       }
     ],
-    other: [
+    empiricalStudies: [
       {
         title: "Enterprise Survey for Innovation and Entrepreneurship in China, ESIEC",
         description: "Research Assistant, Peking University (Enterprise Big Data Research Center)",
@@ -266,6 +315,19 @@ const AcademicProfile = () => {
       description: "Assisted in designing and conducting user experience studies. Produced research reports and recommendations for product improvements."
     }
   ];
+
+  // 星级显示组件
+  const StarRating = ({ rating }) => {
+    return (
+      <div className="flex items-center">
+        {[...Array(5)].map((_, i) => (
+          <span key={i} className={`text-sm ${i < rating ? 'text-yellow-400' : 'text-gray-300'}`}>
+            ⭐
+          </span>
+        ))}
+      </div>
+    );
+  };
 
   // 处理图片加载错误
   const handleImageError = () => {
@@ -583,22 +645,27 @@ const AcademicProfile = () => {
                   <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-6">
                     <ul className="space-y-6">
                       {researchData.preprints.map((preprint, index) => (
-                        <li key={index} className="border-b border-gray-100 pb-5 last:border-b-0 last:pb-0">
-                          <div className="flex flex-wrap justify-between items-start mb-2">
-                            <h4 className="text-lg font-semibold text-gray-800 mb-1">{preprint.title}</h4>
-                            <span className="text-sm bg-blue-50 text-blue-600 px-3 py-1 rounded-full">{preprint.year}</span>
+                        <li key={index} className="border-b border-gray-100 pb-5 last:border-b-0 last:pb-0 flex">
+                          <div className="flex-shrink-0 w-8 text-center mr-4">
+                            <span className="text-sm text-gray-500 font-mono">P{index + 1}</span>
                           </div>
-                          <p className="text-sm text-gray-600 mb-2">{preprint.authors}</p>
-                          <div className="flex items-center text-sm text-blue-600">
-                            <Book size={14} className="mr-1" />
-                            <a 
-                              href={`https://${preprint.repository.toLowerCase()}.org/${preprint.id}`} 
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                              className="hover:underline"
-                            >
-                              {preprint.repository}: {preprint.id}
-                            </a>
+                          <div className="flex-1">
+                            <div className="flex flex-wrap justify-between items-start mb-2">
+                              <h4 className="text-lg font-semibold text-gray-800 mb-1">{preprint.title}</h4>
+                              <span className="text-sm bg-blue-50 text-blue-600 px-3 py-1 rounded-full">{preprint.year}</span>
+                            </div>
+                            <p className="text-sm text-gray-600 mb-2">{preprint.authors}</p>
+                            <div className="flex items-center text-sm text-blue-600">
+                              <Book size={14} className="mr-1" />
+                              <a 
+                                href={`https://${preprint.repository.toLowerCase()}.org/${preprint.id}`} 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="hover:underline"
+                              >
+                                {preprint.repository}: {preprint.id}
+                              </a>
+                            </div>
                           </div>
                         </li>
                       ))}
@@ -621,39 +688,47 @@ const AcademicProfile = () => {
                       <div className="grid grid-cols-1 gap-6">
                         {researchData.publications
                           .filter(paper => paper.year === year)
-                          .map((paper, paperIndex) => (
-                            <motion.div
-                              key={paperIndex}
-                              whileHover={{ y: -4, boxShadow: '0 6px 12px rgba(0,0,0,0.1)' }}
-                              className="bg-white rounded-lg shadow-sm border border-gray-100 p-5"
-                            >
-                              <h5 className="font-semibold mb-2 text-gray-800">{paper.title}</h5>
-                              <p className="text-sm text-gray-600 mb-3">
-                                {paper.authors.split(',').map((author, i) => {
-                                  // Trim whitespace from the author name
-                                  const trimmedAuthor = author.trim();
-                                  // Check if the author name starts with the profile name (to catch cases with asterisks)
-                                  const isYou = trimmedAuthor.startsWith(profileData.name);
-                                  
-                                  return (
-                                    <span key={i} className={isYou ? 'font-bold bg-yellow-100 px-1' : ''}>
-                                      {author}{i < paper.authors.split(',').length - 1 ? ', ' : ''}
-                                    </span>
-                                  );
-                                })}
-                              </p>
-                              <p className="text-sm italic text-gray-500 mb-3">{paper.journal}</p>
-                              <a 
-                                href={paper.doi.startsWith('http') ? paper.doi : `https://doi.org/${paper.doi}`}
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="text-sm text-blue-600 hover:underline flex items-center"
+                          .map((paper, paperIndex) => {
+                            const globalIndex = researchData.publications.findIndex(p => p === paper) + 1;
+                            return (
+                              <motion.div
+                                key={paperIndex}
+                                whileHover={{ y: -4, boxShadow: '0 6px 12px rgba(0,0,0,0.1)' }}
+                                className="bg-white rounded-lg shadow-sm border border-gray-100 p-5 flex"
                               >
-                                <FileText size={14} className="mr-1" />
-                                DOI: {paper.doi.includes('/') ? paper.doi.split('/').pop() : paper.doi}
-                              </a>
-                            </motion.div>
-                          ))}
+                                <div className="flex-shrink-0 w-8 text-center mr-4">
+                                  <span className="text-sm text-gray-500 font-mono">J{globalIndex}</span>
+                                </div>
+                                <div className="flex-1">
+                                  <h5 className="font-semibold mb-2 text-gray-800">{paper.title}</h5>
+                                  <p className="text-sm text-gray-600 mb-3">
+                                    {paper.authors.split(',').map((author, i) => {
+                                      // Trim whitespace from the author name
+                                      const trimmedAuthor = author.trim();
+                                      // Check if the author name starts with the profile name (to catch cases with asterisks)
+                                      const isYou = trimmedAuthor.startsWith(profileData.name);
+                                      
+                                      return (
+                                        <span key={i} className={isYou ? 'font-bold bg-yellow-100 px-1' : ''}>
+                                          {author}{i < paper.authors.split(',').length - 1 ? ', ' : ''}
+                                        </span>
+                                      );
+                                    })}
+                                  </p>
+                                  <p className="text-sm italic text-gray-500 mb-3">{paper.journal}</p>
+                                  <a 
+                                    href={paper.doi.startsWith('http') ? paper.doi : `https://doi.org/${paper.doi}`}
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="text-sm text-blue-600 hover:underline flex items-center"
+                                  >
+                                    <FileText size={14} className="mr-1" />
+                                    DOI: {paper.doi.includes('/') ? paper.doi.split('/').pop() : paper.doi}
+                                  </a>
+                                </div>
+                              </motion.div>
+                            );
+                          })}
                       </div>
                     </div>
                   ))}
@@ -666,21 +741,26 @@ const AcademicProfile = () => {
                   <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-6">
                     <ul className="space-y-6">
                       {researchData.conferences.map((conf, index) => (
-                        <li key={index} className="border-b border-gray-100 pb-5 last:border-b-0 last:pb-0">
-                          {conf.award && (
-                            <div className="mb-2 flex items-center">
-                              <span className="text-yellow-600 mr-1">🏆</span>
-                              <span className="text-sm font-bold text-yellow-600">{conf.award}</span>
-                            </div>
-                          )}
-                          <div className="flex flex-wrap justify-between items-start mb-2">
-                            <h4 className="text-lg font-semibold text-gray-800 mb-1 flex-1 mr-2">{conf.title}</h4>
-                            <span className="text-sm bg-blue-50 text-blue-600 px-3 py-1 rounded-full">{conf.year}</span>
+                        <li key={index} className="border-b border-gray-100 pb-5 last:border-b-0 last:pb-0 flex">
+                          <div className="flex-shrink-0 w-8 text-center mr-4">
+                            <span className="text-sm text-gray-500 font-mono">C{index + 1}</span>
                           </div>
-                          <p className="text-sm text-gray-600 mb-2">{conf.authors}</p>
-                          <div className="flex items-center text-sm text-gray-500">
-                            <Globe size={14} className="mr-1 text-blue-500" />
-                            <span>{conf.conference}, {conf.location}</span>
+                          <div className="flex-1">
+                            {conf.award && (
+                              <div className="mb-2 flex items-center">
+                                <span className="text-yellow-600 mr-1">🏆</span>
+                                <span className="text-sm font-bold text-yellow-600">{conf.award}</span>
+                              </div>
+                            )}
+                            <div className="flex flex-wrap justify-between items-start mb-2">
+                              <h4 className="text-lg font-semibold text-gray-800 mb-1 flex-1 mr-2">{conf.title}</h4>
+                              <span className="text-sm bg-blue-50 text-blue-600 px-3 py-1 rounded-full">{conf.year}</span>
+                            </div>
+                            <p className="text-sm text-gray-600 mb-2">{conf.authors}</p>
+                            <div className="flex items-center text-sm text-gray-500">
+                              <Globe size={14} className="mr-1 text-blue-500" />
+                              <span>{conf.conference}, {conf.location}</span>
+                            </div>
                           </div>
                         </li>
                       ))}
@@ -701,15 +781,15 @@ const AcademicProfile = () => {
               transition={{ duration: 0.3 }}
               className="space-y-10"
             >
-              {/* Short Video and Live Streaming */}
+              {/* Computational Communication & Social Media Research */}
               <div>
                 <div className="flex items-center mb-4">
                   <div className="w-2 h-8 bg-blue-500 rounded mr-3"></div>
-                  <h3 className="text-xl font-semibold text-gray-800">Short Video and Live Streaming</h3>
+                  <h3 className="text-xl font-semibold text-gray-800">Computational Communication & Social Media Research</h3>
                 </div>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {projectsData.shortVideo.map((project, index) => (
+                  {projectsData.computationalCommunication.map((project, index) => (
                     <motion.div
                       key={index}
                       whileHover={{ y: -4, boxShadow: '0 6px 12px rgba(0,0,0,0.1)' }}
@@ -729,43 +809,15 @@ const AcademicProfile = () => {
                 </div>
               </div>
               
-              {/* Social Media Content Analysis */}
+              {/* Digital Sociology & Media Education */}
               <div>
                 <div className="flex items-center mb-4">
                   <div className="w-2 h-8 bg-blue-500 rounded mr-3"></div>
-                  <h3 className="text-xl font-semibold text-gray-800">Social Media Content Analysis</h3>
+                  <h3 className="text-xl font-semibold text-gray-800">Digital Sociology & Media Education</h3>
                 </div>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {projectsData.socialMedia.map((project, index) => (
-                    <motion.div
-                      key={index}
-                      whileHover={{ y: -4, boxShadow: '0 6px 12px rgba(0,0,0,0.1)' }}
-                      className="bg-white rounded-lg shadow-sm border border-gray-100 p-5"
-                    >
-                      <h4 className="font-semibold mb-2 text-gray-800">{project.title}</h4>
-                      <p className="text-sm text-gray-600 mb-4">{project.description}</p>
-                      <div className="flex flex-wrap gap-2">
-                        {project.tech.map((tech, techIndex) => (
-<span key={techIndex} className="px-2 py-1 bg-blue-50 text-blue-600 rounded text-xs">
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
-              
-              {/* Computational Social Science */}
-              <div>
-                <div className="flex items-center mb-4">
-                  <div className="w-2 h-8 bg-blue-500 rounded mr-3"></div>
-                  <h3 className="text-xl font-semibold text-gray-800">Computational Social Science</h3>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {projectsData.computationalSocial.map((project, index) => (
+                  {projectsData.digitalSociology.map((project, index) => (
                     <motion.div
                       key={index}
                       whileHover={{ y: -4, boxShadow: '0 6px 12px rgba(0,0,0,0.1)' }}
@@ -785,43 +837,15 @@ const AcademicProfile = () => {
                 </div>
               </div>
               
-              {/* Media Education */}
+              {/* Empirical Studies & Surveys */}
               <div>
                 <div className="flex items-center mb-4">
                   <div className="w-2 h-8 bg-blue-500 rounded mr-3"></div>
-                  <h3 className="text-xl font-semibold text-gray-800">Media Education</h3>
+                  <h3 className="text-xl font-semibold text-gray-800">Empirical Studies & Surveys</h3>
                 </div>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {projectsData.mediaEducation.map((project, index) => (
-                    <motion.div
-                      key={index}
-                      whileHover={{ y: -4, boxShadow: '0 6px 12px rgba(0,0,0,0.1)' }}
-                      className="bg-white rounded-lg shadow-sm border border-gray-100 p-5"
-                    >
-                      <h4 className="font-semibold mb-2 text-gray-800">{project.title}</h4>
-                      <p className="text-sm text-gray-600 mb-4">{project.description}</p>
-                      <div className="flex flex-wrap gap-2">
-                        {project.tech.map((tech, techIndex) => (
-                          <span key={techIndex} className="px-2 py-1 bg-blue-50 text-blue-600 rounded text-xs">
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
-              
-              {/* Social Survey & Others */}
-              <div>
-                <div className="flex items-center mb-4">
-                  <div className="w-2 h-8 bg-blue-500 rounded mr-3"></div>
-                  <h3 className="text-xl font-semibold text-gray-800">Social Survey & Others</h3>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {projectsData.other.map((project, index) => (
+                  {projectsData.empiricalStudies.map((project, index) => (
                     <motion.div
                       key={index}
                       whileHover={{ y: -4, boxShadow: '0 6px 12px rgba(0,0,0,0.1)' }}
@@ -851,37 +875,280 @@ const AcademicProfile = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
+              className="space-y-10"
             >
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {portfolioData.map((item, index) => (
-                  <motion.div
-                    key={index}
-                    whileHover={{ y: -5 }}
-                    className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100"
-                  >
-                    <div className="h-40 bg-gray-100 overflow-hidden">
-                      <img 
-                        src={item.image} 
-                        alt={item.title} 
-                        className="w-full h-full object-cover transition-transform hover:scale-105"
-                      />
-                    </div>
-                    <div className="p-5">
-                      <h3 className="text-lg font-semibold mb-2 text-gray-800">{item.title}</h3>
-                      <p className="text-gray-600 mb-4 text-sm">{item.description}</p>
-                      
-                      <a 
-                        href={item.url} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium"
+              {/* Personal Work */}
+              <div>
+                <h2 className="text-2xl font-bold mb-6 text-gray-800">Personal Work</h2>
+                
+                {/* Visual Works */}
+                <div className="mb-8">
+                  <div className="flex items-center mb-4">
+                    <div className="w-2 h-6 bg-green-500 rounded mr-3"></div>
+                    <h3 className="text-lg font-semibold text-gray-800">Visual Works</h3>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {portfolioData.personalWork.visual.map((item, index) => (
+                      <motion.div
+                        key={index}
+                        whileHover={{ y: -5 }}
+                        className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100"
                       >
-                        <Share2 size={14} className="mr-1" />
-                        View Project
-                      </a>
-                    </div>
-                  </motion.div>
-                ))}
+                        <div className="h-40 bg-gray-100 overflow-hidden">
+                          <img 
+                            src={item.image} 
+                            alt={item.title} 
+                            className="w-full h-full object-cover transition-transform hover:scale-105"
+                          />
+                        </div>
+                        <div className="p-5">
+                          <div className="flex justify-between items-start mb-2">
+                            <h4 className="text-lg font-semibold text-gray-800">{item.title}</h4>
+                            <div className="flex items-center gap-2">
+                              <span className="text-xs text-gray-500">{item.year}</span>
+                              <StarRating rating={item.rating} />
+                            </div>
+                          </div>
+                          <p className="text-gray-600 mb-4 text-sm">{item.description}</p>
+                          <a 
+                            href={item.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium"
+                          >
+                            <Share2 size={14} className="mr-1" />
+                            View Project
+                          </a>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Video Works */}
+                <div className="mb-8">
+                  <div className="flex items-center mb-4">
+                    <div className="w-2 h-6 bg-green-500 rounded mr-3"></div>
+                    <h3 className="text-lg font-semibold text-gray-800">Video Works</h3>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {portfolioData.personalWork.video.map((item, index) => (
+                      <motion.div
+                        key={index}
+                        whileHover={{ y: -5 }}
+                        className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100"
+                      >
+                        <div className="h-40 bg-gray-100 overflow-hidden">
+                          <img 
+                            src={item.image} 
+                            alt={item.title} 
+                            className="w-full h-full object-cover transition-transform hover:scale-105"
+                          />
+                        </div>
+                        <div className="p-5">
+                          <div className="flex justify-between items-start mb-2">
+                            <h4 className="text-lg font-semibold text-gray-800">{item.title}</h4>
+                            <div className="flex items-center gap-2">
+                              <span className="text-xs text-gray-500">{item.year}</span>
+                              <StarRating rating={item.rating} />
+                            </div>
+                          </div>
+                          <p className="text-gray-600 mb-4 text-sm">{item.description}</p>
+                          <a 
+                            href={item.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium"
+                          >
+                            <Share2 size={14} className="mr-1" />
+                            View Project
+                          </a>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Interface & Software Works */}
+                <div className="mb-8">
+                  <div className="flex items-center mb-4">
+                    <div className="w-2 h-6 bg-green-500 rounded mr-3"></div>
+                    <h3 className="text-lg font-semibold text-gray-800">Interface & Software Works</h3>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {portfolioData.personalWork.interface.map((item, index) => (
+                      <motion.div
+                        key={index}
+                        whileHover={{ y: -5 }}
+                        className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100"
+                      >
+                        <div className="h-40 bg-gray-100 overflow-hidden">
+                          <img 
+                            src={item.image} 
+                            alt={item.title} 
+                            className="w-full h-full object-cover transition-transform hover:scale-105"
+                          />
+                        </div>
+                        <div className="p-5">
+                          <div className="flex justify-between items-start mb-2">
+                            <h4 className="text-lg font-semibold text-gray-800">{item.title}</h4>
+                            <div className="flex items-center gap-2">
+                              <span className="text-xs text-gray-500">{item.year}</span>
+                              <StarRating rating={item.rating} />
+                            </div>
+                          </div>
+                          <p className="text-gray-600 mb-4 text-sm">{item.description}</p>
+                          <a 
+                            href={item.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium"
+                          >
+                            <Share2 size={14} className="mr-1" />
+                            View Project
+                          </a>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Professional Work */}
+              <div>
+                <h2 className="text-2xl font-bold mb-6 text-gray-800">Professional Work</h2>
+                
+                {/* Visual Works */}
+                <div className="mb-8">
+                  <div className="flex items-center mb-4">
+                    <div className="w-2 h-6 bg-purple-500 rounded mr-3"></div>
+                    <h3 className="text-lg font-semibold text-gray-800">Visual Works</h3>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {portfolioData.professionalWork.visual.map((item, index) => (
+                      <motion.div
+                        key={index}
+                        whileHover={{ y: -5 }}
+                        className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100"
+                      >
+                        <div className="h-40 bg-gray-100 overflow-hidden">
+                          <img 
+                            src={item.image} 
+                            alt={item.title} 
+                            className="w-full h-full object-cover transition-transform hover:scale-105"
+                          />
+                        </div>
+                        <div className="p-5">
+                          <div className="flex justify-between items-start mb-2">
+                            <h4 className="text-lg font-semibold text-gray-800">{item.title}</h4>
+                            <div className="flex items-center gap-2">
+                              <span className="text-xs text-gray-500">{item.year}</span>
+                              <StarRating rating={item.rating} />
+                            </div>
+                          </div>
+                          <p className="text-gray-600 mb-4 text-sm">{item.description}</p>
+                          <a 
+                            href={item.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium"
+                          >
+                            <Share2 size={14} className="mr-1" />
+                            View Project
+                          </a>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Video Works */}
+                <div className="mb-8">
+                  <div className="flex items-center mb-4">
+                    <div className="w-2 h-6 bg-purple-500 rounded mr-3"></div>
+                    <h3 className="text-lg font-semibold text-gray-800">Video Works</h3>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {portfolioData.professionalWork.video.map((item, index) => (
+                      <motion.div
+                        key={index}
+                        whileHover={{ y: -5 }}
+                        className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100"
+                      >
+                        <div className="h-40 bg-gray-100 overflow-hidden">
+                          <img 
+                            src={item.image} 
+                            alt={item.title} 
+                            className="w-full h-full object-cover transition-transform hover:scale-105"
+                          />
+                        </div>
+                        <div className="p-5">
+                          <div className="flex justify-between items-start mb-2">
+                            <h4 className="text-lg font-semibold text-gray-800">{item.title}</h4>
+                            <div className="flex items-center gap-2">
+                              <span className="text-xs text-gray-500">{item.year}</span>
+                              <StarRating rating={item.rating} />
+                            </div>
+                          </div>
+                          <p className="text-gray-600 mb-4 text-sm">{item.description}</p>
+                          <a 
+                            href={item.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium"
+                          >
+                            <Share2 size={14} className="mr-1" />
+                            View Project
+                          </a>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Interface & Software Works */}
+                <div className="mb-8">
+                  <div className="flex items-center mb-4">
+                    <div className="w-2 h-6 bg-purple-500 rounded mr-3"></div>
+                    <h3 className="text-lg font-semibold text-gray-800">Interface & Software Works</h3>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {portfolioData.professionalWork.interface.map((item, index) => (
+                      <motion.div
+                        key={index}
+                        whileHover={{ y: -5 }}
+                        className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100"
+                      >
+                        <div className="h-40 bg-gray-100 overflow-hidden">
+                          <img 
+                            src={item.image} 
+                            alt={item.title} 
+                            className="w-full h-full object-cover transition-transform hover:scale-105"
+                          />
+                        </div>
+                        <div className="p-5">
+                          <div className="flex justify-between items-start mb-2">
+                            <h4 className="text-lg font-semibold text-gray-800">{item.title}</h4>
+                            <div className="flex items-center gap-2">
+                              <span className="text-xs text-gray-500">{item.year}</span>
+                              <StarRating rating={item.rating} />
+                            </div>
+                          </div>
+                          <p className="text-gray-600 mb-4 text-sm">{item.description}</p>
+                          <a 
+                            href={item.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium"
+                          >
+                            <Share2 size={14} className="mr-1" />
+                            View Project
+                          </a>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
               </div>
             </motion.div>
           )}
