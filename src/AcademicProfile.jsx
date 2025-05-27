@@ -179,126 +179,66 @@ const AcademicProfile = () => {
       }
     ]
   };
-
-// 作品集数据
+  // 作品集数据
   const portfolioData = {
-    personalWork: {
-
-      visual: [
-        {
-          title: "Social Media Emotion Trend Visualization",
-          description: "Data visualization showing public emotional trends during major social events on Weibo platform.",
-          year: "2024",
-          rating: 4,
-          image: "/api/placeholder/400/240",
-          url: "https://example.com/social-viz"
-        },
-        {
-          title: "Urban Transportation Data Dashboard",
-          description: "Interactive dashboard analyzing traffic patterns and public transport efficiency in major cities.",
-          year: "2023",
-          rating: 3,
-          image: "/api/placeholder/400/240",
-          url: "https://example.com/transport-viz"
-        }
-      ],
-
-      video: [
-        {
-          title: "Behind-the-scenes documentary of the 20th Shanghai Film Festival Film Channel Media Focus Unit",
-          description: "Video production, supplied to Bazaar Men",
-          year: "2023",
-          rating: 5,
-          image: "/rongyichen/images/Video07.jpg",
-          url: "https://mp.weixin.qq.com/s/AEDOdbB2HCHjRcE0gEUDaQ"
-        },
-        {
-          title: "#Our Days Spring Retro Movie#, #Li Xiaoran, Li Naiwen, Zhou Yiran, Zhou Qi's fashionable movie with a sense of the times#",
-          description: "Video production, supplied to Bazaar Men",
-          year: "2023",
-          rating: 5,
-          image: "/rongyichen/images/Video02.jpg",
-          url: "https://wxapp.tc.qq.com/251/20302/stodownload?encfilekey=Cvvj5Ix3eez3Y79SxtvVL0L7CkPM6dFibusn4vVFEyiapvMKEbut8OYbbCwGX0J96XSYwEYCwefg3wmqE8vnAVmdUyRrQYR6eObwEZ1Yibt83QdHHUgmV7ibKWnuFNEgLopUBFGam20bPb3OBdnnon3fQQ&dotrans=0&hy=SZ&idx=1&m=c6061cbbcc8a554fc4a99eadc4f43fa8&uzid=2&token=6xykWLEnztJZXHP94vj8eEfRibbtJQkU35tiasUSPO1epWsicKZf2hoYAbkycgtwTFzR81eprZ8ia52vSZIdMjKNMaYWkYo8Vxg3JlwM4VXzvyvqDPGE3S5Ys8ZVJs5h47hxYA5ibicl2Nrnvfw2LmP9G7r4bBuOqfN3UNnarAaicLTZgo&ctsc=9488890"
-        }
-      ],
-      interface: [
-        {
-          title: "Media Literacy Learning Platform",
-          description: "Educational platform designed for adolescents to improve digital media literacy through gamification.",
-          year: "2023",
-          rating: 4,
-          image: "/api/placeholder/400/240",
-          url: "https://example.com/media-platform"
-        }
-      ]
-      
-    },
-    professionalWork: {
-      visual: [
-        {
-          title: "ByteDance Algorithm Performance Dashboard",
-          description: "Real-time performance monitoring system for content recommendation algorithms at ByteDance.",
-          year: "2023",
-          rating: 5,
-          image: "/api/placeholder/400/240",
-          url: "https://example.com/bytedance-dash"
-        }
-      ],
-
-      video: [
-        {
-          title: "Real-time physical examination of cultural relics Mogao Grottoes monitoring and early warning system",
-          description: "Video production, supplied to Xinhuanet·Science Popularization China",
-          year: "2022",
-          rating: 5,
-          image: "/rongyichen/images/Video03.jpg",
-          url: "http://www.anhuinews.com/ahkj/kjsj/202210/t20221018_6458799.html"
-        },
-        {
-          title: "“Super mirror” chases the sun and illuminates green energy",
-          description: "Video production, supplied to Xinhuanet·Science Popularization China",
-          year: "2022",
-          rating: 5,
-          image: "/rongyichen/images/Video04.jpg",
-          url: "https://www.news.cn/science/2022-08/19/c_1310654117.htm"
-        },
-        {
-          title: "Take care of each other! #Bless the 2022 graduates with ancient poems#",
-          description: "Video production, supplied to People's Daily Weibo",
-          year: "2022",
-          rating: 5,
-          image: "/rongyichen/images/Video05.jpg",
-          url: "https://weibo.com/2803301701/LxWIfBX6y"
-        },
-        {
-          title: "It's youth! 10 BGMs to play on loop during the graduation season#",
-          description: "Video production, supplied to People's Daily Weibo",
-          year: "2022",
-          rating: 5,
-          image: "/rongyichen/images/Video06.jpg",
-          url: "https://weibo.com/2803301701/LvOvmiK1s"
-        },
-        {
-          title: "Selling special foods is a little special. #Implementing two responsibilities to build a food safety Beijing#",
-          description: "Video production, supplied to Beijing Municipal Administration for Market Regulation",
-          year: "2024",
-          rating: 5,
-          image: "/rongyichen/images/Video01.jpg",
-          url: "https://wxapp.tc.qq.com/251/20302/stodownload?encfilekey=Cvvj5Ix3eez3Y79SxtvVL0L7CkPM6dFibusn4vVFEyiapvMKEbut8OYbbCwGX0J96XSYwEYCwefg3wmqE8vnAVmdUyRrQYR6eObwEZ1Yibt83QdHHUgmV7ibKWnuFNEgLopUBFGam20bPb3OBdnnon3fQQ&dotrans=0&hy=SZ&idx=1&m=c6061cbbcc8a554fc4a99eadc4f43fa8&uzid=2&token=6xykWLEnztJZXHP94vj8eEfRibbtJQkU35tiasUSPO1epWsicKZf2hoYAbkycgtwTFzR81eprZ8ia52vSZIdMjKNMaYWkYo8Vxg3JlwM4VXzvyvqDPGE3S5Ys8ZVJs5h47hxYA5ibicl2Nrnvfw2LmP9G7r4bBuOqfN3UNnarAaicLTZgo&ctsc=9488890"
-        }
-      ],
-      interface: [
-        {
-          title: "Mango TV AI Content Analysis Tool",
-          description: "AI-powered content analysis interface for automated video content categorization and recommendation.",
-          year: "2025",
-          rating: 5,
-          image: "/api/placeholder/400/240",
-          url: "https://example.com/mango-ai"
-        }
-      ]
-
-    }
+    videos: [
+      {
+        title: "Behind-the-scenes documentary of the 20th Shanghai Film Festival Film Channel Media Focus Unit",
+        description: "Video production, supplied to Bazaar Men",
+        year: "2023",
+        rating: 5,
+        emoji: "🎬",
+        url: "https://mp.weixin.qq.com/s/AEDOdbB2HCHjRcE0gEUDaQ"
+      },
+      {
+        title: "#Our Days Spring Retro Movie#, #Li Xiaoran, Li Naiwen, Zhou Yiran, Zhou Qi's fashionable movie with a sense of the times#",
+        description: "Video production, supplied to Bazaar Men",
+        year: "2023",
+        rating: 5,
+        emoji: "🎭",
+        url: "https://wxapp.tc.qq.com/251/20302/stodownload?encfilekey=Cvvj5Ix3eez3Y79SxtvVL0L7CkPM6dFibusn4vVFEyiapvMKEbut8OYbbCwGX0J96XSYwEYCwefg3wmqE8vnAVmdUyRrQYR6eObwEZ1Yibt83QdHHUgmV7ibKWnuFNEgLopUBFGam20bPb3OBdnnon3fQQ&dotrans=0&hy=SZ&idx=1&m=c6061cbbcc8a554fc4a99eadc4f43fa8&uzid=2&token=6xykWLEnztJZXHP94vj8eEfRibbtJQkU35tiasUSPO1epWsicKZf2hoYAbkycgtwTFzR81eprZ8ia52vSZIdMjKNMaYWkYo8Vxg3JlwM4VXzvyvqDPGE3S5Ys8ZVJs5h47hxYA5ibicl2Nrnvfw2LmP9G7r4bBuOqfN3UNnarAaicLTZgo&ctsc=9488890"
+      },
+      {
+        title: "Real-time physical examination of cultural relics Mogao Grottoes monitoring and early warning system",
+        description: "Video production, supplied to Xinhuanet·Science Popularization China",
+        year: "2022",
+        rating: 5,
+        emoji: "🏛️",
+        url: "http://www.anhuinews.com/ahkj/kjsj/202210/t20221018_6458799.html"
+      },
+      {
+        title: "“Super mirror” chases the sun and illuminates green energy",
+        description: "Video production, supplied to Xinhuanet·Science Popularization China",
+        year: "2022",
+        rating: 5,
+        emoji: "☀️",
+        url: "https://www.news.cn/science/2022-08/19/c_1310654117.htm"
+      },
+      {
+        title: "Take care of each other! #Bless the 2022 graduates with ancient poems#",
+        description: "Video production, supplied to People's Daily Weibo",
+        year: "2022",
+        rating: 5,
+        emoji: "🎓",
+        url: "https://weibo.com/2803301701/LxWIfBX6y"
+      },
+      {
+        title: "It's youth! 10 BGMs to play on loop during the graduation season#",
+        description: "Video production, supplied to People's Daily Weibo",
+        year: "2022",
+        rating: 5,
+        emoji: "🎵",
+        url: "https://weibo.com/2803301701/LvOvmiK1s"
+      },
+      {
+        title: "Selling special foods is a little special. #Implementing two responsibilities to build a food safety Beijing#",
+        description: "Video production, supplied to Beijing Municipal Administration for Market Regulation",
+        year: "2024",
+        rating: 5,
+        emoji: "🍜",
+        url: "https://wxapp.tc.qq.com/251/20302/stodownload?encfilekey=Cvvj5Ix3eez3Y79SxtvVL0L7CkPM6dFibusn4vVFEyiapvMKEbut8OYbbCwGX0J96XSYwEYCwefg3wmqE8vnAVmdUyRrQYR6eObwEZ1Yibt83QdHHUgmV7ibKWnuFNEgLopUBFGam20bPb3OBdnnon3fQQ&dotrans=0&hy=SZ&idx=1&m=c6061cbbcc8a554fc4a99eadc4f43fa8&uzid=2&token=6xykWLEnztJZXHP94vj8eEfRibbtJQkU35tiasUSPO1epWsicKZf2hoYAbkycgtwTFzR81eprZ8ia52vSZIdMjKNMaYWkYo8Vxg3JlwM4VXzvyvqDPGE3S5Ys8ZVJs5h47hxYA5ibicl2Nrnvfw2LmP9G7r4bBuOqfN3UNnarAaicLTZgo&ctsc=9488890"
+      }
+    ]
   };
 
   // 重新组织的项目数据
@@ -1046,279 +986,92 @@ const industryData = [
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
-              className="space-y-10"
+              className="space-y-8"
             >
-              {/* Personal Work */}
-              <div>
-                <h2 className="text-2xl font-bold mb-6 text-gray-800">Personal Work</h2>
-                
-                {/* Visual Works */}
-                <div className="mb-8">
-                  <div className="flex items-center mb-4">
-                    <div className="w-2 h-6 bg-green-500 rounded mr-3"></div>
-                    <h3 className="text-lg font-semibold text-gray-800">Visual Works</h3>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {portfolioData.personalWork.visual.map((item, index) => (
-                      <motion.div
-                        key={index}
-                        whileHover={{ y: -5 }}
-                        className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100"
-                      >
-                        <div className="h-40 bg-gray-100 overflow-hidden">
-                          <img 
-                            src={item.image} 
-                            alt={item.title} 
-                            className="w-full h-full object-cover transition-transform hover:scale-105"
-                          />
-                        </div>
-                        <div className="p-5">
-                          <div className="flex justify-between items-start mb-2">
-                            <h4 className="text-lg font-semibold text-gray-800">{item.title}</h4>
-                            <div className="flex items-center gap-2">
-                              <span className="text-xs text-gray-500">{item.year}</span>
-                              <StarRating rating={item.rating} />
-                            </div>
-                          </div>
-                          <p className="text-gray-600 mb-4 text-sm">{item.description}</p>
-                          <a 
-                            href={item.url} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium"
-                          >
-                            <Share2 size={14} className="mr-1" />
-                            View Project
-                          </a>
-                        </div>
-                      </motion.div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Video Works */}
-                <div className="mb-8">
-                  <div className="flex items-center mb-4">
-                    <div className="w-2 h-6 bg-green-500 rounded mr-3"></div>
-                    <h3 className="text-lg font-semibold text-gray-800">Video Works</h3>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {portfolioData.personalWork.video.map((item, index) => (
-                      <motion.div
-                        key={index}
-                        whileHover={{ y: -5 }}
-                        className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100"
-                      >
-                        <div className="h-40 bg-gray-100 overflow-hidden">
-                          <img 
-                            src={item.image} 
-                            alt={item.title} 
-                            className="w-full h-full object-cover transition-transform hover:scale-105"
-                          />
-                        </div>
-                        <div className="p-5">
-                          <div className="flex justify-between items-start mb-2">
-                            <h4 className="text-lg font-semibold text-gray-800">{item.title}</h4>
-                            <div className="flex items-center gap-2">
-                              <span className="text-xs text-gray-500">{item.year}</span>
-                              <StarRating rating={item.rating} />
-                            </div>
-                          </div>
-                          <p className="text-gray-600 mb-4 text-sm">{item.description}</p>
-                          <a 
-                            href={item.url} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium"
-                          >
-                            <Share2 size={14} className="mr-1" />
-                            View Project
-                          </a>
-                        </div>
-                      </motion.div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Interface & Software Works */}
-                <div className="mb-8">
-                  <div className="flex items-center mb-4">
-                    <div className="w-2 h-6 bg-green-500 rounded mr-3"></div>
-                    <h3 className="text-lg font-semibold text-gray-800">Interface & Software Works</h3>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {portfolioData.personalWork.interface.map((item, index) => (
-                      <motion.div
-                        key={index}
-                        whileHover={{ y: -5 }}
-                        className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100"
-                      >
-                        <div className="h-40 bg-gray-100 overflow-hidden">
-                          <img 
-                            src={item.image} 
-                            alt={item.title} 
-                            className="w-full h-full object-cover transition-transform hover:scale-105"
-                          />
-                        </div>
-                        <div className="p-5">
-                          <div className="flex justify-between items-start mb-2">
-                            <h4 className="text-lg font-semibold text-gray-800">{item.title}</h4>
-                            <div className="flex items-center gap-2">
-                              <span className="text-xs text-gray-500">{item.year}</span>
-                              <StarRating rating={item.rating} />
-                            </div>
-                          </div>
-                          <p className="text-gray-600 mb-4 text-sm">{item.description}</p>
-                          <a 
-                            href={item.url} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium"
-                          >
-                            <Share2 size={14} className="mr-1" />
-                            View Project
-                          </a>
-                        </div>
-                      </motion.div>
-                    ))}
-                  </div>
-                </div>
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold text-gray-800 mb-4">Video Portfolio</h2>
+                <p className="text-gray-600 max-w-2xl mx-auto">
+                  A collection of multimedia content productions spanning entertainment, science communication, and cultural preservation projects.
+                </p>
               </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {portfolioData.videos.map((video, index) => (
+                  <motion.div
+                    key={index}
+                    whileHover={{ y: -8, scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="group relative"
+                  >
+                    {/* 卡片主体 */}
+                    <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:border-blue-200">
+                      
+                      {/* 表情符号头部 */}
+                      <div className="h-24 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 flex items-center justify-center relative overflow-hidden">
+                        <div className="absolute inset-0 bg-gradient-to-r from-blue-400/10 via-purple-400/10 to-pink-400/10"></div>
+                        <span className="text-5xl relative z-10 group-hover:scale-110 transition-transform duration-300">
+                          {video.emoji}
+                        </span>
+                        {/* 装饰性元素 */}
+                        <div className="absolute top-2 right-2 w-8 h-8 bg-white/20 rounded-full blur-sm"></div>
+                        <div className="absolute bottom-1 left-3 w-4 h-4 bg-white/30 rounded-full blur-sm"></div>
+                      </div>
 
-              {/* Professional Work */}
-              <div>
-                <h2 className="text-2xl font-bold mb-6 text-gray-800">Professional Work</h2>
-                
-                {/* Visual Works */}
-                <div className="mb-8">
-                  <div className="flex items-center mb-4">
-                    <div className="w-2 h-6 bg-purple-500 rounded mr-3"></div>
-                    <h3 className="text-lg font-semibold text-gray-800">Visual Works</h3>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {portfolioData.professionalWork.visual.map((item, index) => (
-                      <motion.div
-                        key={index}
-                        whileHover={{ y: -5 }}
-                        className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100"
-                      >
-                        <div className="h-40 bg-gray-100 overflow-hidden">
-                          <img 
-                            src={item.image} 
-                            alt={item.title} 
-                            className="w-full h-full object-cover transition-transform hover:scale-105"
-                          />
+                      {/* 内容区域 */}
+                      <div className="p-6">
+                        {/* 年份和评分 */}
+                        <div className="flex justify-between items-center mb-3">
+                          <span className="px-3 py-1 bg-gradient-to-r from-blue-100 to-purple-100 text-blue-700 text-sm font-medium rounded-full">
+                            {video.year}
+                          </span>
+                          <StarRating rating={video.rating} />
                         </div>
-                        <div className="p-5">
-                          <div className="flex justify-between items-start mb-2">
-                            <h4 className="text-lg font-semibold text-gray-800">{item.title}</h4>
-                            <div className="flex items-center gap-2">
-                              <span className="text-xs text-gray-500">{item.year}</span>
-                              <StarRating rating={item.rating} />
-                            </div>
-                          </div>
-                          <p className="text-gray-600 mb-4 text-sm">{item.description}</p>
-                          <a 
-                            href={item.url} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium"
-                          >
-                            <Share2 size={14} className="mr-1" />
-                            View Project
-                          </a>
-                        </div>
-                      </motion.div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Video Works */}
-                <div className="mb-8">
-                  <div className="flex items-center mb-4">
-                    <div className="w-2 h-6 bg-purple-500 rounded mr-3"></div>
-                    <h3 className="text-lg font-semibold text-gray-800">Video Works</h3>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {portfolioData.professionalWork.video.map((item, index) => (
-                      <motion.div
-                        key={index}
-                        whileHover={{ y: -5 }}
-                        className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100"
-                      >
-                        <div className="h-40 bg-gray-100 overflow-hidden">
-                          <img 
-                            src={item.image} 
-                            alt={item.title} 
-                            className="w-full h-full object-cover transition-transform hover:scale-105"
-                          />
-                        </div>
-                        <div className="p-5">
-                          <div className="flex justify-between items-start mb-2">
-                            <h4 className="text-lg font-semibold text-gray-800">{item.title}</h4>
-                            <div className="flex items-center gap-2">
-                              <span className="text-xs text-gray-500">{item.year}</span>
-                              <StarRating rating={item.rating} />
-                            </div>
-                          </div>
-                          <p className="text-gray-600 mb-4 text-sm">{item.description}</p>
-                          <a 
-                            href={item.url} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium"
-                          >
-                            <Share2 size={14} className="mr-1" />
-                            View Project
-                          </a>
-                        </div>
-                      </motion.div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Interface & Software Works */}
-                <div className="mb-8">
-                  <div className="flex items-center mb-4">
-                    <div className="w-2 h-6 bg-purple-500 rounded mr-3"></div>
-                    <h3 className="text-lg font-semibold text-gray-800">Interface & Software Works</h3>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {portfolioData.professionalWork.interface.map((item, index) => (
-                      <motion.div
-                        key={index}
-                        whileHover={{ y: -5 }}
-                        className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100"
-                      >
-                        <div className="h-40 bg-gray-100 overflow-hidden">
-                          <img 
-                            src={item.image} 
-                            alt={item.title} 
-                            className="w-full h-full object-cover transition-transform hover:scale-105"
-                          />
-                        </div>
-                        <div className="p-5">
-                          <div className="flex justify-between items-start mb-2">
-                            <h4 className="text-lg font-semibold text-gray-800">{item.title}</h4>
-                            <div className="flex items-center gap-2">
-                              <span className="text-xs text-gray-500">{item.year}</span>
-                              <StarRating rating={item.rating} />
-                            </div>
-                          </div>
-                          <p className="text-gray-600 mb-4 text-sm">{item.description}</p>
-                          <a 
-                            href={item.url} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium"
-                          >
-                            <Share2 size={14} className="mr-1" />
-                            View Project
-                          </a>
-                        </div>
-                      </motion.div>
-                    ))}
-                  </div>
+                        
+                        {/* 标题 */}
+                        <h3 className="text-lg font-bold text-gray-800 mb-3 line-clamp-2 leading-tight group-hover:text-blue-700 transition-colors">
+                          {video.title}
+                        </h3>
+                        
+                        {/* 描述 */}
+                        <p className="text-gray-600 text-sm mb-4 line-clamp-3 leading-relaxed">
+                          {video.description}
+                        </p>
+                        
+                        {/* 查看链接 */}
+                        <a 
+                          href={video.url} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-sm font-medium rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-200 group-hover:shadow-lg"
+                        >
+                          <Film size={16} className="mr-2" />
+                          Watch Video
+                        </a>
+                      </div>
+                      
+                      {/* 悬浮时的光效 */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-blue-400/5 via-transparent to-purple-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                    </div>
+                    
+                    {/* 序号标识 */}
+                    <div className="absolute -top-3 -right-3 w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-500 text-white text-sm font-bold rounded-full flex items-center justify-center shadow-lg">
+                      {index + 1}
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+              
+              {/* 底部统计信息 */}
+              <div className="mt-12 text-center">
+                <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-50 to-purple-50 rounded-full border border-blue-100">
+                  <PieChart size={20} className="text-blue-600 mr-2" />
+                  <span className="text-gray-700 font-medium">
+                    Total: {portfolioData.videos.length} Video Productions
+                  </span>
+                  <span className="mx-3 text-gray-400">•</span>
+                  <span className="text-gray-700">
+                    Avg Rating: {(portfolioData.videos.reduce((acc, video) => acc + video.rating, 0) / portfolioData.videos.length).toFixed(1)} ⭐
+                  </span>
                 </div>
               </div>
             </motion.div>
