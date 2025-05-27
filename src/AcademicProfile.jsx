@@ -183,7 +183,7 @@ const AcademicProfile = () => {
 // 作品集数据
   const portfolioData = {
     personalWork: {
-      /*
+
       visual: [
         {
           title: "Social Media Emotion Trend Visualization",
@@ -202,7 +202,7 @@ const AcademicProfile = () => {
           url: "https://example.com/transport-viz"
         }
       ],
-      */
+
       video: [
         {
           title: "Behind-the-scenes documentary of the 20th Shanghai Film Festival Film Channel Media Focus Unit",
@@ -220,7 +220,7 @@ const AcademicProfile = () => {
           image: "/rongyichen/images/Video02.jpg",
           url: "https://wxapp.tc.qq.com/251/20302/stodownload?encfilekey=Cvvj5Ix3eez3Y79SxtvVL0L7CkPM6dFibusn4vVFEyiapvMKEbut8OYbbCwGX0J96XSYwEYCwefg3wmqE8vnAVmdUyRrQYR6eObwEZ1Yibt83QdHHUgmV7ibKWnuFNEgLopUBFGam20bPb3OBdnnon3fQQ&dotrans=0&hy=SZ&idx=1&m=c6061cbbcc8a554fc4a99eadc4f43fa8&uzid=2&token=6xykWLEnztJZXHP94vj8eEfRibbtJQkU35tiasUSPO1epWsicKZf2hoYAbkycgtwTFzR81eprZ8ia52vSZIdMjKNMaYWkYo8Vxg3JlwM4VXzvyvqDPGE3S5Ys8ZVJs5h47hxYA5ibicl2Nrnvfw2LmP9G7r4bBuOqfN3UNnarAaicLTZgo&ctsc=9488890"
         }
-      ]/*,
+      ],
       interface: [
         {
           title: "Media Literacy Learning Platform",
@@ -231,10 +231,9 @@ const AcademicProfile = () => {
           url: "https://example.com/media-platform"
         }
       ]
-      */
+      
     },
     professionalWork: {
-      /*
       visual: [
         {
           title: "ByteDance Algorithm Performance Dashboard",
@@ -245,7 +244,7 @@ const AcademicProfile = () => {
           url: "https://example.com/bytedance-dash"
         }
       ],
-      */
+
       video: [
         {
           title: "Real-time physical examination of cultural relics Mogao Grottoes monitoring and early warning system",
@@ -287,7 +286,7 @@ const AcademicProfile = () => {
           image: "/rongyichen/images/Video01.jpg",
           url: "https://wxapp.tc.qq.com/251/20302/stodownload?encfilekey=Cvvj5Ix3eez3Y79SxtvVL0L7CkPM6dFibusn4vVFEyiapvMKEbut8OYbbCwGX0J96XSYwEYCwefg3wmqE8vnAVmdUyRrQYR6eObwEZ1Yibt83QdHHUgmV7ibKWnuFNEgLopUBFGam20bPb3OBdnnon3fQQ&dotrans=0&hy=SZ&idx=1&m=c6061cbbcc8a554fc4a99eadc4f43fa8&uzid=2&token=6xykWLEnztJZXHP94vj8eEfRibbtJQkU35tiasUSPO1epWsicKZf2hoYAbkycgtwTFzR81eprZ8ia52vSZIdMjKNMaYWkYo8Vxg3JlwM4VXzvyvqDPGE3S5Ys8ZVJs5h47hxYA5ibicl2Nrnvfw2LmP9G7r4bBuOqfN3UNnarAaicLTZgo&ctsc=9488890"
         }
-      ]/*,
+      ],
       interface: [
         {
           title: "Mango TV AI Content Analysis Tool",
@@ -298,7 +297,7 @@ const AcademicProfile = () => {
           url: "https://example.com/mango-ai"
         }
       ]
-      */
+
     }
   };
 
