@@ -219,23 +219,28 @@ const AcademicProfile = () => {
     ],
     computationalSocial: [
       {
-        title: "Youth Digital Literacy Research",
-        description: "Survey analysis of Chinese adolescents' digital literacy levels and their influencing factors, proposing educational recommendations.",
-        tech: ["Questionnaire Survey", "Structural Equation Modeling"]
+        title: "Research on the Representation and Related Discourses of Various Chinese Ethnicities in Global Social Media",
+        description: "Research Assistant, Communication University of China (Institute of Communication Studies)",
+        tech: ["National Ethnic Affairs Commission Youth Ethnic Funding: 2021-GMC-052", "Advisor: Professor Baoqin Xue"]
       }
     ],
     mediaEducation: [
       {
-        title: "Cultivating Adolescents' Digital Literacy and Value Orientation in a Media Convergence Environment (National Social Science Funding: 19BXW087)",
-        description: "Advisor: Professor Kai Zhang.",
-        tech: ["RA", "Advisor: Professor Kai Zhang"]
+        title: "Cultivating Adolescents' Digital Literacy and Value Orientation in a Media Convergence Environment",
+        description: "Research Assistant, Communication University of China (Institute of Communication Studies)",
+        tech: ["National Social Science Funding: 19BXW087", "Advisor: Professor Kai Zhang"]
       }
     ],
     other: [
       {
-        title: "Urban Community Communication Research",
-        description: "Analysis of information dissemination characteristics and resident participation patterns in community WeChat groups.",
-        tech: ["Social Survey", "Communication Theory"]
+        title: "Enterprise Survey for Innovation and Entrepreneurship in China, ESIEC",
+        description: "Research Assistant, Peking University (Enterprise Big Data Research Center)",
+        tech: ["2023", "Advisor: Professor Xiaobo Zhang"]
+      },
+      {
+        title: "Mianzhu Children's Cognitive and Non-cognitive Abilities Development Tracking Project",
+        description: "Research Assistant, Jinan University (Survey Data Center)",
+        tech: ["2020", "Advisor: Professor James J. Heckman"]
       }
     ]
   };
