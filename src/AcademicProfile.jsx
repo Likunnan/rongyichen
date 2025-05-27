@@ -184,15 +184,17 @@ const AcademicProfile = () => {
     videos: [
       {
         title: "Behind-the-scenes documentary of the 20th Shanghai Film Festival Film Channel Media Focus Unit",
-        description: "Video production, supplied to Bazaar Men",
+        description: "Cinematography and editing",
+        organization: "Bazaar Men",
         year: "2023",
         rating: 5,
         emoji: "🎬",
         url: "https://mp.weixin.qq.com/s/AEDOdbB2HCHjRcE0gEUDaQ"
       },
       {
-        title: "#Our Days Spring Retro Movie#, #Li Xiaoran, Li Naiwen, Zhou Yiran, Zhou Qi's fashionable movie with a sense of the times#",
-        description: "Video production, supplied to Bazaar Men",
+        title: "#Our Days Spring Retro Movie# Li Xiaoran, Li Naiwen, Zhou Yiran, Zhou Qi's fashionable movie with a sense of the times",
+        description: "Cinematography and editing",
+        organization: "Bazaar Men",
         year: "2023",
         rating: 5,
         emoji: "🎭",
@@ -200,7 +202,8 @@ const AcademicProfile = () => {
       },
       {
         title: "Real-time physical examination of cultural relics Mogao Grottoes monitoring and early warning system",
-        description: "Video production, supplied to Xinhuanet·Science Popularization China",
+        description: "Planning, VFX, and editing",
+        organization: "Xinhua Net",
         year: "2022",
         rating: 5,
         emoji: "🏛️",
@@ -208,23 +211,26 @@ const AcademicProfile = () => {
       },
       {
         title: "“Super mirror” chases the sun and illuminates green energy",
-        description: "Video production, supplied to Xinhuanet·Science Popularization China",
+        description: "Planning, VFX, and editing",
+        organization: "Xinhua Net",
         year: "2022",
         rating: 5,
         emoji: "☀️",
         url: "https://www.news.cn/science/2022-08/19/c_1310654117.htm"
       },
       {
-        title: "Take care of each other! #Bless the 2022 graduates with ancient poems#",
-        description: "Video production, supplied to People's Daily Weibo",
+        title: "Take care of each other! Bless the 2022 graduates with ancient poems",
+        description: "Planning, VFX, and editing",
+        organization: "People's Daily",
         year: "2022",
         rating: 5,
         emoji: "🎓",
         url: "https://weibo.com/2803301701/LxWIfBX6y"
       },
       {
-        title: "It's youth! 10 BGMs to play on loop during the graduation season#",
-        description: "Video production, supplied to People's Daily Weibo",
+        title: "It's youth! 10 BGMs to play on loop during the graduation season",
+        description: "Planning, VFX, and editing",
+        organization: "People's Daily",
         year: "2022",
         rating: 5,
         emoji: "🎵",
@@ -232,7 +238,8 @@ const AcademicProfile = () => {
       },
       {
         title: "Selling special foods is a little special. #Implementing two responsibilities to build a food safety Beijing#",
-        description: "Video production, supplied to Beijing Municipal Administration for Market Regulation",
+        description: "Cinematography and editing",
+        organization: "Beijing Market Regulation",
         year: "2024",
         rating: 5,
         emoji: "🍜",
@@ -1037,16 +1044,21 @@ const industryData = [
                           {video.description}
                         </p>
                         
-                        {/* 查看链接 */}
-                        <a 
-                          href={video.url} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-sm font-medium rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-200 group-hover:shadow-lg"
-                        >
-                          <Film size={16} className="mr-2" />
-                          Watch Video
-                        </a>
+                        {/* 机构标签和查看链接 */}
+                        <div className="flex items-center justify-between">
+                          <span className="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded border">
+                            {video.organization}
+                          </span>
+                          <a 
+                            href={video.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-sm font-medium rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-200 group-hover:shadow-lg"
+                          >
+                            <Film size={16} className="mr-2" />
+                            Watch Video
+                          </a>
+                        </div>
                       </div>
                       
                       {/* 悬浮时的光效 */}
