@@ -18,9 +18,8 @@ const AcademicProfile = () => {
     socialMedia: [
       { name: "Google Scholar", icon: Award, url: "https://scholar.google.com/citations?user=aFi4Wd0AAAAJ&hl=en" },
       { name: "RedNote", icon: BookOpen, url: "https://www.xiaohongshu.com/user/profile/6633970e000000000303278d" },
-      { name: "Twitter", icon: Twitter, url: "https://twitter.com/rongyichen" },
-      { name: "GitHub", icon: Github, url: "https://github.com/rongyichen" },
-      { name: "Download CV", icon: Download, url: "/files/rongyi_chen_cv.pdf" }
+      { name: "GitHub", icon: Github, url: "https://github.com/Likunnan" }
+      // { name: "Download CV", icon: Download, url: "/files/rongyi_chen_cv.pdf" }
     ]
   };
 
@@ -62,10 +61,10 @@ const AcademicProfile = () => {
     preprints: [
       {
         year: "2025",
-        title: "How Multi-Channel Networks (MCNs) Govern Algorithmic Labor in Chinese Live-Streaming Industry]{Institutionalizing Folk Theories of Algorithms: How Multi-Channel Networks (MCNs) Govern Algorithmic Labor in Chinese Live-Streaming Industry",
+        title: "Institutionalizing Folk Theories of Algorithms: How Multi-Channel Networks (MCNs) Govern Algorithmic Labor in Chinese Live-Streaming Industry",
         authors: "Qing Xiao, Rongyi Chen, Jingjia Xiao, Tianyang Fu, Alice Qian Zhang, Xianzhe Fan, Bingbing Zhang, Zhicong Lu, Hong Shen",
         repository: "arXiv",
-        id: ""
+        id: "https://arxiv.org/abs/2505.20623"
       },
     ],
     publications: [
@@ -87,8 +86,8 @@ const AcademicProfile = () => {
         year: "2024",
         title: "Migrant youth aged 16 to 19 during social crises: Stress, deviant behavior, and identification with mainstream society",
         authors: "Hua Zhong, Qing Xiao, Rongyi Chen, Jingjia Xiao",
-        journal: "Huxiang Law Review (Huxiangfaxuepinglun",
-        doi: "10.20034/j.cnki.hxfxpl.2024.04.000"
+        journal: "Huxiang Law Review (湖湘法学评论)",
+        doi: "https://mp.weixin.qq.com/s/fjACER5Um7StLb4HSPKXpA"
       }
     ],
     conferences: [
@@ -554,19 +553,19 @@ const industryData = [
                     <h3 className="text-xl font-semibold mb-4 text-gray-800">Education</h3>
                     <div className="space-y-4">
                       <div>
-                        <p className="text-gray-800 font-medium">M.A. in Computational Communication</p>
-                        <p className="text-gray-600">Central South University, 2023-2026</p>
+                        <p className="text-gray-800 font-medium">Central South University, 2023-2026</p>
+                        <p className="text-gray-600">M.A. in Computational Communication</p>
                       </div>
                       <div>
-                        <p className="text-gray-800 font-medium">B.A. in Communication</p>
-                        <p className="text-gray-600">Double B.A. in Broadcasting & Hosting Arts</p>
+                        <p className="text-gray-800 font-medium">Communication University of China, 2019-2023</p>
+                        <p className="text-gray-600">B.A. in Communication</p>
+                        <p className="text-gray-600 mt-1">B.A. in Broadcasting & Hosting Arts</p>
                         <p className="text-gray-600 mt-1">Minors in Human-Centered Design</p>
                         <p className="text-gray-600 mt-1">Minors in Computational Communication</p>
-                        <p className="text-gray-600 mt-1">Communication University of China, 2019-2023</p>
                       </div>
                       <div>
-                        <p className="text-gray-800 font-medium">International Communication Certificate</p>
-                        <p className="text-gray-600 mt-1">University of Missouri-Columbia, 2019-2023</p>
+                        <p className="text-gray-800 font-medium">University of Missouri-Columbia, 2019-2023</p>
+                        <p className="text-gray-600 mt-1">International Communication Certificate</p>
                       </div>
                     </div>
                   </div>
@@ -716,12 +715,12 @@ const industryData = [
                             <div className="flex items-center text-sm text-blue-600">
                               <Book size={14} className="mr-1" />
                               <a 
-                                href={`https://${preprint.repository.toLowerCase()}.org/${preprint.id}`} 
+                                href={preprint.id.startsWith('http') ? preprint.id : `https://${preprint.repository.toLowerCase()}.org/abs/${preprint.id}`}
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 className="hover:underline"
                               >
-                                {preprint.repository}: {preprint.id}
+                                {preprint.repository}: {preprint.id.startsWith('http') ? preprint.id.split('/').pop() : preprint.id}
                               </a>
                             </div>
                           </div>
@@ -781,7 +780,7 @@ const industryData = [
                                     className="text-sm text-blue-600 hover:underline flex items-center"
                                   >
                                     <FileText size={14} className="mr-1" />
-                                    DOI: {paper.doi.includes('/') ? paper.doi.split('/').pop() : paper.doi}
+                                    {paper.doi.startsWith('http') ? 'Link' : 'DOI'}: {paper.doi.startsWith('http') ? paper.doi.split('/').pop() || 'View Paper' : paper.doi}
                                   </a>
                                 </div>
                               </motion.div>
@@ -814,7 +813,20 @@ const industryData = [
                               <h4 className="text-lg font-semibold text-gray-800 mb-1 flex-1 mr-2">{conf.title}</h4>
                               <span className="text-sm bg-blue-50 text-blue-600 px-3 py-1 rounded-full">{conf.year}</span>
                             </div>
-                            <p className="text-sm text-gray-600 mb-2">{conf.authors}</p>
+                            <p className="text-sm text-gray-600 mb-2">
+                              {conf.authors.split(',').map((author, i) => {
+                                // Trim whitespace from the author name
+                                const trimmedAuthor = author.trim();
+                                // Check if the author name starts with the profile name (to catch cases with asterisks)
+                                const isYou = trimmedAuthor.startsWith(profileData.name);
+                                
+                                return (
+                                  <span key={i} className={isYou ? 'font-bold bg-yellow-100 px-1' : ''}>
+                                    {author}{i < conf.authors.split(',').length - 1 ? ', ' : ''}
+                                  </span>
+                                );
+                              })}
+                            </p>
                             <div className="flex items-center text-sm text-gray-500">
                               <Globe size={14} className="mr-1 text-blue-500" />
                               <span>{conf.conference}, {conf.location}</span>
