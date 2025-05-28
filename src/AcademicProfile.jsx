@@ -184,7 +184,7 @@ const AcademicProfile = () => {
       {
         title: "Behind-the-scenes documentary of the 20th Shanghai Film Festival Film Channel Media Focus Unit",
         description: "Cinematography and editing",
-        organization: "Bazaar Men",
+        organization: "📓 Bazaar Men",
         year: "2023",
         rating: 5,
         emoji: "🎬",
@@ -193,16 +193,16 @@ const AcademicProfile = () => {
       {
         title: "#Our Days Spring Retro Movie# Li Xiaoran, Li Naiwen, Zhou Yiran, Zhou Qi's fashionable movie with a sense of the times",
         description: "Cinematography and editing",
-        organization: "Bazaar Men",
+        organization: "📓 Bazaar Men",
         year: "2023",
         rating: 5,
-        emoji: "🎭",
+        emoji: "👜",
         url: "https://wxapp.tc.qq.com/251/20302/stodownload?encfilekey=Cvvj5Ix3eez3Y79SxtvVL0L7CkPM6dFibusn4vVFEyiapvMKEbut8OYbbCwGX0J96XSYwEYCwefg3wmqE8vnAVmdUyRrQYR6eObwEZ1Yibt83QdHHUgmV7ibKWnuFNEgLopUBFGam20bPb3OBdnnon3fQQ&dotrans=0&hy=SZ&idx=1&m=c6061cbbcc8a554fc4a99eadc4f43fa8&uzid=2&token=6xykWLEnztJZXHP94vj8eEfRibbtJQkU35tiasUSPO1epWsicKZf2hoYAbkycgtwTFzR81eprZ8ia52vSZIdMjKNMaYWkYo8Vxg3JlwM4VXzvyvqDPGE3S5Ys8ZVJs5h47hxYA5ibicl2Nrnvfw2LmP9G7r4bBuOqfN3UNnarAaicLTZgo&ctsc=9488890"
       },
       {
         title: "Real-time physical examination of cultural relics Mogao Grottoes monitoring and early warning system",
         description: "Planning, VFX, and editing",
-        organization: "Xinhua Net",
+        organization: "📰 Xinhua Net",
         year: "2022",
         rating: 5,
         emoji: "🏛️",
@@ -211,7 +211,7 @@ const AcademicProfile = () => {
       {
         title: "“Super mirror” chases the sun and illuminates green energy",
         description: "Planning, VFX, and editing",
-        organization: "Xinhua Net",
+        organization: "📰 Xinhua Net",
         year: "2022",
         rating: 5,
         emoji: "☀️",
@@ -220,7 +220,7 @@ const AcademicProfile = () => {
       {
         title: "Take care of each other! Bless the 2022 graduates with ancient poems",
         description: "Planning, VFX, and editing",
-        organization: "People's Daily",
+        organization: "📰 People's Daily",
         year: "2022",
         rating: 5,
         emoji: "🎓",
@@ -229,7 +229,7 @@ const AcademicProfile = () => {
       {
         title: "It's youth! 10 BGMs to play on loop during the graduation season",
         description: "Planning, VFX, and editing",
-        organization: "People's Daily",
+        organization: "📰 People's Daily",
         year: "2022",
         rating: 5,
         emoji: "🎵",
@@ -238,10 +238,10 @@ const AcademicProfile = () => {
       {
         title: "Selling special foods is a little special. #Implementing two responsibilities to build a food safety Beijing#",
         description: "Cinematography and editing",
-        organization: "Beijing Market Regulation",
+        organization: "🏢 Beijing Market Regulation",
         year: "2024",
         rating: 5,
-        emoji: "🍜",
+        emoji: "🥛",
         url: "https://wxapp.tc.qq.com/251/20302/stodownload?encfilekey=Cvvj5Ix3eez3Y79SxtvVL0L7CkPM6dFibusn4vVFEyiapvMKEbut8OYbbCwGX0J96XSYwEYCwefg3wmqE8vnAVmdUyRrQYR6eObwEZ1Yibt83QdHHUgmV7ibKWnuFNEgLopUBFGam20bPb3OBdnnon3fQQ&dotrans=0&hy=SZ&idx=1&m=c6061cbbcc8a554fc4a99eadc4f43fa8&uzid=2&token=6xykWLEnztJZXHP94vj8eEfRibbtJQkU35tiasUSPO1epWsicKZf2hoYAbkycgtwTFzR81eprZ8ia52vSZIdMjKNMaYWkYo8Vxg3JlwM4VXzvyvqDPGE3S5Ys8ZVJs5h47hxYA5ibicl2Nrnvfw2LmP9G7r4bBuOqfN3UNnarAaicLTZgo&ctsc=9488890"
       }
     ]
