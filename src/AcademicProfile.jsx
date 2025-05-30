@@ -252,14 +252,14 @@ const AcademicProfile = () => {
     grants: [
       {
         year: "2025",
-        title: "Research Report on the Transformation of News Production and Dissemination Models in Mainstream Media Based on Artificial Intelligence Technology",
+        title: "Research Report on the Transformation of News Production and Dissemination Models in News Organizations through Artificial Intelligence",
         role: "Co-PI",
         program: "Hunan Broadcasting System Research Fellowship Program",
         amount: "CN¥100,000"
       },
       {
         year: "2023-2024",
-        title: "Misinformation and Public Opinion: Crisis Communication on Hunan's Social Media Platforms",
+        title: "Misinformation and Public Opinion: Social Media Crisis Communication amid Disasters and Emergencies",
         role: "Co-PI", 
         program: "Hunan Daily Research Fellowship Program",
         amount: "CN¥30,000"
