@@ -27,6 +27,11 @@ const AcademicProfile = () => {
   const newsData = {
     academic: [
       {
+        date: "2025-06-20",
+        title: "🎉 Research Paper Accepted by SSCI Q1 Journal!",
+        content: "My co-authored paper “Enhancing Trust or Fostering Misjudgment? Assessing the Impact of Emerging Geographic Information Displays on Social Media Users' Information Trust” has been accepted by the International Journal of Human–Computer Interaction (IJHCI), a prestigious SSCI Q1 journal."
+      },
+      {
         date: "2025-05-20",
         title: "🏆 AEJMC MCS Second Place Faculty Paper Award! ",
         content: "My co-authored paper has been accepted to the Mass Communication and Society Division session at the 2025 AEJMC 108th Annual Conference (as first author). I will be presenting at the MCS Top Refereed Research Paper Session."
@@ -38,6 +43,11 @@ const AcademicProfile = () => {
       }
     ],
     nonAcademic: [
+      {
+        date: "2025-05-30",
+        title: "🏆 Second-Time Winner of Outstanding Radio and Television Program Award!",
+        content: "I have been honored with the First Prize for Outstanding Radio and Television Programs by the Hunan Province Radio and Television Association for the second time as the sole author, recognizing excellence in broadcast media production and content creation."
+      },
       {
         date: "2025-05-16",
         title: "🎤 AI Virtual Audience System Deployed in Top-Tier Variety Show",
@@ -68,6 +78,13 @@ const AcademicProfile = () => {
       },
     ],
     publications: [
+      {
+        year: "2025",
+        title: "Enhancing Trust or Fostering Misjudgment? Assessing the Impact of Emerging Geographic Information Displays on Social Media Users’ Information Trust",
+        authors: "Yalong Xiao, Rongyi Chen, Qing Xiao, Chengzhang Zhu, Jie Feng",
+        journal: "International Journal of Human–Computer Interaction (HIHC)",
+        doi: "10.1080/10447318.2025.2524493"
+      },
       {
         year: "2024",
         title: "Exploring Influencers' and Users' Experiences in Douyin's Virtual Reality Live-Streaming",
@@ -589,6 +606,13 @@ const industryData = [
                   <div className="mt-8">
                     <h3 className="text-xl font-semibold mb-4 text-gray-800">Awards</h3>
                     <div className="space-y-4">
+                      <div className="flex items-start">
+                        <span className="text-xl mr-2 mt-0.5">🎖️</span>
+                        <div>
+                          <p className="text-gray-800 font-medium">First Prize for Outstanding Radio and Television Programs</p>
+                          <p className="text-gray-600">Hunan Province Radio and Television Association, 2025</p>
+                        </div>
+                      </div>
                       <div className="flex items-start">
                         <span className="text-xl mr-2 mt-0.5">🏆</span>
                         <div>
