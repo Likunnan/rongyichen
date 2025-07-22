@@ -44,6 +44,11 @@ const AcademicProfile = () => {
     ],
     nonAcademic: [
       {
+        date: "2025-06-19",
+        title: "🤖 Multi-Modal AI Robot Interaction System Debuts in Premium Reality Show",
+        content: "Successfully developed and deployed an advanced physical robot interaction system for Mango TV's flagship variety show 'Chinese Restaurant: African Entrepreneurship Season'. Our team created a sophisticated super-intelligent agent powered by large language models and mechanical control systems, featuring seamless cross-platform coordination. The robot delivers multilingual customized voice interaction Q&A with coordinated physical gestures for show guests and restaurant customers, facilitates interactive physical games, performs proactive customer data collection and analytics, displays dynamic facial expressions on its screen interface, and processes real-time visual information. Notably, our interaction system achieves significantly reduced latency compared to other commercial interactive AI systems in the market."
+      },
+      {
         date: "2025-05-30",
         title: "🏆 Second-Time Winner of Outstanding Radio and Television Program Award!",
         content: "I have been honored with the First Prize for Outstanding Radio and Television Programs by the Hunan Province Radio and Television Association for the second time as the sole author, recognizing excellence in broadcast media production and content creation."
