@@ -315,7 +315,7 @@ const AcademicProfile = () => {
             {
         title: "Research on the Representation and Related Discourses of Various Chinese Ethnicities in Global Social Media",
         meta: "2022-2023,  Institute of Communication Studies, Communication University of China",
-        description: "Research Assistant,",
+        description: "Research Assistant",
         tech: ["National Ethnic Affairs Commission Youth Ethnic Funding: 2021-GMC-052"]
       }
     ],
